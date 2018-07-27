@@ -1,0 +1,412 @@
+article,aside,details,figcaption,figure,footer,header,hgroup,nav,section,summary{display:block;}audio,canvas,video{display:inline-block;}audio:not([controls]){display:none;height:0;}[hidden]{display:none;}html{font-family:sans-serif;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;}a:focus{outline:thin dotted;}a:active,a:hover{outline:0;}h1{font-size:2em;}abbr[title]{border-bottom:1px dotted;}b,strong{font-weight:700;}dfn{font-style:italic;}mark{background:#ff0;color:#000;}code,kbd,pre,samp{font-family:monospace, serif;font-size:1em;}pre{white-space:pre-wrap;word-wrap:break-word;}q{quotes:\201C \201D \2018 \2019;}small{font-size:80%;}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline;}sup{top:-.5em;}sub{bottom:-.25em;}img{border:0;}svg:not(:root){overflow:hidden;}fieldset{border:1px solid silver;margin:0 2px;padding:.35em .625em .75em;}button,input,select,textarea{font-family:inherit;font-size:100%;margin:0;}button,input{line-height:normal;}button,html input[type=button],/* 1 */input[type=reset],input[type=submit]{-webkit-appearance:button;cursor:pointer;}button[disabled],input[disabled]{cursor:default;}input[type=checkbox],input[type=radio]{box-sizing:border-box;padding:0;}input[type=search]{-webkit-appearance:textfield;-moz-box-sizing:content-box;-webkit-box-sizing:content-box;box-sizing:content-box;}input[type=search]::-webkit-search-cancel-button,input[type=search]::-webkit-search-decoration{-webkit-appearance:none;}textarea{overflow:auto;vertical-align:top;}table{border-collapse:collapse;border-spacing:0;}body,figure{margin:0;}legend,button::-moz-focus-inner,input::-moz-focus-inner{border:0;padding:0;}
+
+.clearfix:after {visibility: hidden; display: block; font-size: 0; content: ''; clear: both; height: 0; }
+
+* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+/* ---FONTS--- */
+
+h1 {
+    font-family: 'Raleway', sans-serif;
+    color:  #000000;
+    font-size: 45.83px;
+    font-weight: 700;
+    line-height: 24px;
+    text-align: left;
+    text-transform: uppercase;
+
+}
+
+h2 {
+    font-family: Raleway;
+    color: #000000;
+    font-size: 30px;
+    font-weight: 700;
+    text-transform: uppercase;
+    line-height: 24px;
+    text-align: center;
+}
+
+p {
+    font-family: Lora;
+    color:  #666666;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: center;
+}
+
+/* --- HEADER--- */
+
+header .wrapper {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+header h1 {
+    float: left;
+    position: absolute;
+    top: 15px;
+    left: 15px;
+}
+
+.mainHeader {
+    height: 100vh;
+    background-image: url(../assets/home-1.jpeg);
+    background-size: cover;
+    background-position: center;
+    background-color: whitesmoke;
+    position: relative;
+    padding: 1px;
+}
+
+/* --- NAVIGATION --- */
+
+.navigation {
+    margin-top: 30px;
+    margin-left: 350px;
+}
+
+nav {
+    position: absolute; 
+    right: 15px;
+}
+
+nav li {
+    list-style: none;
+    float: left;
+}
+
+nav li a {
+    font-family: 'Raleway', sans-serif;
+    color: black;
+    text-transform: uppercase;
+    font-size: 12px;
+    font-size: 16.67px;
+    font-weight: 700;
+    line-height: 24px;
+    text-align: left;
+    padding: 10px;
+    text-decoration: none;
+}
+
+nav li a:hover {
+    color:rgb(100, 166, 4);
+}
+
+/* ---MOST POPULAR RECIPES SECTION AND FOOD OPTIONS SECTION--- */
+
+    /* ??? is it best to have the whole thing in a wrapper??? */
+
+.popularRecipes .wrapper {
+    width: 100%;
+    margin: 0 auto;
+}
+
+    /* ???I think calc can be used somewhere here??? */
+
+.popularRecipesContent, .foodOptionsContent  {
+    width: 50%;
+    float: left;
+}
+
+.popularRecipes img, .foodOptions img {
+    width: 50%;
+    float: left;
+}
+
+.popularRecipesContent {
+    padding: 70px 50px;
+    text-align: center;
+}
+
+.border {
+    border-bottom: 4px solid rgb(100, 166, 4);
+    width: 70px;
+    margin: 0 auto;
+    margin-bottom: 40px;
+}
+
+.popularRecipes button {
+    background-color:  #64a604;
+    width: 200px;
+    height: 57px;   
+    text-transform: uppercase;
+    color: white;
+    border: none;
+}
+
+    /* ???add transition on the hover if you have time!??? */
+
+.popularRecipes button:hover {
+    background-color: rgb(153, 153, 153);
+}
+
+.foodOptionsContent {
+    margin: 0 auto;
+}
+
+.foodOptionsContent li {
+    list-style: none;
+}
+
+.foodOptionsContent ul {
+    clear: both;
+}
+
+.food i {
+    float: left;
+    display: inline-block;
+}
+
+.foodContent {
+    float: left;
+}
+
+/* .food h3 {
+    float: left;
+} */
+
+.food {
+	width: 40%;
+    margin: 10px 0;
+    padding: 10px;
+    float: left;
+}
+
+.food h3 {
+    font-family: Raleway;
+    color:  #000000;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 36px;
+    text-align: left;
+    text-transform: uppercase;
+}
+
+.food p {
+    font-family: Lora;
+    color:  #999999;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 25px;
+    text-align: left;
+    clear: both;
+    text-align: left;
+}
+
+/* --- OUT RESTAURANTS SECTION -- */
+
+.ourRestaurants {
+    margin: 0 auto;
+    padding: 50px;
+    width: 100%;
+    position: relative;
+}
+
+.restaurantImage {
+    margin: 0 auto;
+    margin-top: 50px;
+    width: 27.3%;
+    display: block;
+}
+
+.circleText { 
+    width: 10%;
+    position: absolute;
+    top: 8%;
+    left: 57%;
+}
+
+.ourRestaurantsContent {
+    margin: 0 auto;
+    margin-top: 20px;
+    width: 40.5%;
+}
+
+.ourRestaurantsContent .border {
+    margin-bottom: 20px;
+}
+
+/* --- IMAGES --- */
+
+.imageGrid img {
+    width: 33%;
+    float: left;
+}
+
+/* --- HUNGRY CLIENTS --- */
+
+.hungryClients {
+    background-color: rgb(221, 237, 154);
+    clear: both;
+    margin: 0 auto;
+}
+
+.hungryClientsContent {
+    margin: 0 auto;
+    padding: 50px 0;
+    width: 50%;
+}
+
+.hungryClientsParagraph {
+    position: relative;
+}
+
+.hungryClientsParagraph::before {
+    content: "\f10d";
+	font-size: 35px;
+    font-family: 'Font Awesome\ 5 Free';
+    font-weight: 900;
+    color: rgba(255,255,255, 0.5);
+    position: absolute;
+	top: -25px;
+    left: -60px;
+}
+
+/* --- THIS IS FOR the QUOTES --- */
+
+/* MAKE THE QUOTES TRANSPARENT  */
+
+.hungryClientsParagraph::after {
+    content: "\f10e";
+    font-family: 'Font Awesome\ 5 Free';
+    font-size: 35px;
+    font-weight: 900;
+    line-height: 35.707px;
+    color: rgba(255,255,255, 0.5);
+    position: absolute;
+	bottom: 5px;
+    right: -60px;
+}
+
+/* ???WHY ISN'T IT CENTERING??? */
+/* ???HOW DO YOU DO THIS THE RIGHT WAY??? */
+
+.hungryClientsButtons {
+    /* margin-left: 250px; */
+    /* margin: 0 auto; */
+    /* display: block; */
+    position: absolute;
+    left: 50%;
+    /* bottom: 10%; */
+
+}
+
+.hungryClientsButtons i {
+    font-family: 'Font Awesome\ 5 Free';
+    font-size: 35px;
+    font-weight: 900;
+    line-height: 35.707px;
+    color: rgba(255,255,255);
+    border: none;
+    background-color: rgb(221, 237, 154);
+    /* display: inline-block; */
+    /* text-align: center; */
+    padding: 5px;
+}
+
+.hungryClientsButtons i:hover {
+    color: rgba(255,255,255, 0.6)
+}
+
+/* --- FOOTER --- */
+
+footer h1 {
+    font-family: 'Raleway', sans-serif;
+    color: #64a604;
+    font-size: 37.5px;
+    font-weight: 700;
+    line-height: 24px;
+    text-align: left;
+    text-transform: uppercase;
+}
+
+footer p {
+    font-family: Lora;
+    color:  #999999;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 26px;
+    text-align: left;
+}
+
+footer h2 {
+    font-family: Raleway;
+    color:  #ffffff;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 24px;
+    text-align: left;
+}
+
+/* --- MAIN FOOTER --- */
+
+.mainFooter {
+    background-color: #2e2e2e;
+    padding: 20px;
+    /* margin: ; */
+    /* margin-top: 1px; */
+
+}
+
+footer li {
+    list-style: none;
+}
+
+.footerSection {
+    width: 30%;
+    padding: 10px;    
+}
+
+.mainFooterInfo {
+    /* clear: both; */
+    float: left;
+}
+
+.mainFooterPosts {
+    float: left;
+
+}
+
+.mainFooterPosts a {
+    text-decoration: none;
+    font-family: Lora;
+    color:  #999999;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 44px;
+    text-align: left;
+}
+
+.mainFooterPosts a:hover {
+    color: white;
+}
+
+.mainFooterSubscribe {
+    float: left;
+}
+
+/* ???CAN WE GET THE BORDER PIXEL THINNER THAN 1PX??? */
+
+.footerBorder {
+    width: 250px;
+    border-bottom: 1px solid #999999;
+
+}
+
+.socialIcons .footerBorder {
+    margin-top: 20px;
+}
+
+.socialIcons a {
+    text-decoration: none;
+    font-family: Lora;
+    color: white;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 44px;
+    text-align: left;
+    padding: 5px;
+}
