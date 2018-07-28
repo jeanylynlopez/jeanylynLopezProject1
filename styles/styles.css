@@ -47,7 +47,7 @@ header .wrapper {
 header h1 {
     float: left;
     position: absolute;
-    top: 15px;
+    top: 0px;
     left: 15px;
 }
 
@@ -71,6 +71,7 @@ header h1 {
 nav {
     position: absolute; 
     right: 15px;
+    top: -15px;
 }
 
 nav li {
@@ -140,38 +141,77 @@ nav li a:hover {
     /* ???add transition on the hover if you have time!??? */
 
 .popularRecipes button:hover {
-    background-color: rgb(153, 153, 153);
+    background-color: rgba(100, 166, 4, 0.7);
 }
 
-.foodOptionsContent {
-    margin: 0 auto;
+/* --- FOOD OPTIONS --- */
+
+.foodOptionsContent ul {
+    /* position: relative; */
 }
 
 .foodOptionsContent li {
-    list-style: none;
+    list-style:  none;
 }
 
-.foodOptionsContent ul {
-    clear: both;
-}
-
-.food i {
-    float: left;
-    display: inline-block;
-}
-
-.foodContent {
-    float: left;
-}
-
-/* .food h3 {
-    float: left;
+/* .foodContent h3::before {
+    position: absolute;
+    left: 20px;
 } */
 
+.foodContent {
+    padding: 15px;
+    max-height: 150px;
+}
+
 .food {
-	width: 40%;
-    margin: 10px 0;
-    padding: 10px;
+    position: relative;
+}
+
+.foodOptionsContent li::before {
+    font-family: 'Font Awesome\ 5 Free';
+    color:  #333333;
+    font-size: 18px;
+    font-weight: 900;
+    line-height: 24px;
+    text-align: left;
+    position: absolute;
+    left: -10px;
+    top: 40px;
+}
+
+.foodOptionsContent li:nth-child(1)::before {
+    content: "\f094";
+}
+
+.foodOptionsContent li:nth-child(2)::before {
+    content: "\f2e7";
+}
+
+.foodOptionsContent li:nth-child(3)::before {
+    content: "\f0f4";
+}
+
+.foodOptionsContent li:nth-child(4)::before {
+    content: "\f000";
+}
+
+.foodOptionsContent li:nth-child(5)::before {
+    content: "\f06c";
+}
+
+.foodOptionsContent li:nth-child(6)::before {
+    content: "\f2e5";
+}
+
+.foodContent p {
+    margin-top: -20px;
+}
+
+.food {
+    width: 47%;
+    /* min-height: 220px; */
+    /* padding-left: 15px; */
     float: left;
 }
 
@@ -183,9 +223,11 @@ nav li a:hover {
     line-height: 36px;
     text-align: left;
     text-transform: uppercase;
+    /* margin-bottom: 5px; */
 }
 
 .food p {
+    
     font-family: Lora;
     color:  #999999;
     font-size: 13px;
@@ -359,12 +401,12 @@ footer h2 {
 
 .mainFooterInfo {
     /* padding-left: 50px; */
-    margin-left: 50px
+    margin-left: 100px
 }
 
 .mainFooterSubscribe {
     /* padding-right: 50px; */
-    margin-right: 50px;
+    margin-right: 100px;
 }
 
 .mainFooterPosts a {
@@ -404,6 +446,10 @@ footer h2 {
     padding: 5px;
 }
 
+.socialIcons a:hover {
+    color: #999999;
+}
+
 /* --- SECOND FOOTER --- */
 
 .secondFooter {
@@ -414,7 +460,7 @@ footer h2 {
 }
 
 .secondFooterInfo {
-    margin-left: 95px;
+    margin-left: 145px;
 }
 
 .secondFooter a {
