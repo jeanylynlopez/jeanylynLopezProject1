@@ -5,52 +5,62 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Delicious | Blog</title>
+    <link href="https://fonts.googleapis.com/css?family=Lora|Raleway" rel="stylesheet">
+    <link type="image/png" href="images/favicon.png" rel="icon">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ"
         crossorigin="anonymous">
+    <link rel="stylesheet" href="styles/styles.css">
 </head>
 <body>
 
 <!-- HEADER -->
 
-    <header>
-        <img src="assets/home-1.jpeg" alt="main home pcture of drinks">
-        <h1>delicious</h1>
-        <nav>
-            <ul>
-                <li>
-                    <a href="#home">home</a>
-                </li>
-                <li>
-                    <a href="">about</a>
-                </li>
-                <li>
-                    <a href="">recipes</a>
-                </li>
-                <li>
-                    <a href="">nurtition</a>
-                </li>
-                <li>
-                    <a href="#blog">blog</a>
-                </li>
-                <li>
-                    <a href="">shop</a>
-                </li>
-                <li>
-                    <a href="#contact">contact</a>
-                </li>
-                <li>
-                    <a href="">shopping tool</a>
-                </li>
-                <li>
-                    <a href="">search tool</a>
-                </li>
-            </ul>
-        </nav>
-    </header>
+    <header class="blogHeader">
+        <!-- <img src="assets/home-1.jpeg" alt="main home pcture of drinks"> -->
+        <div class="wrapper clearfix">
+            <h1>Delicious</h1>
+            <nav class="navigation">
+                <ul>
+                    <li>
+                        <a href="#home">home</a>
+                    </li>
+                    <li>
+                        <a href="">about</a>
+                    </li>
+                    <li>
+                        <a href="">recipes</a>
+                    </li>
+                    <li>
+                        <a href="">nurtition</a>
+                    </li>
+                    <li>
+                        <a href="#blog">blog</a>
+                    </li>
+                    <li>
+                        <a href="">shop</a>
+                    </li>
+                    <li>
+                        <a href="#contact">contact</a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fas fa-shopping-bag"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <i class="fas fa-search"></i>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+            <!-- </div> -->
+        </div>
+        </header>
 
 <!-- MAIN ARTICLE AND SECTIONS -->
 
-    <main>
+    <main class="wrapper">
         <article>
             <div>
                 <h2>pineapple chicken</h2>
@@ -85,7 +95,7 @@
         </section>
     </main>
 
-    <aside>
+    <aside class="wrapper">
         <h3>related posts</h3>
         <ul>
             <a href="#">
@@ -112,7 +122,7 @@
         </ul>
     </aside>
 
-    <aside>
+    <aside class="wrapper">
         <h3>02 comments</h3>
         <ul>
             <li>
@@ -136,7 +146,7 @@
 
 <!-- FORM -->
 
-    <section>
+    <section class="wrapper">
         <h3>leave a comment</h3>
         <form action="">
             <input type="text">
@@ -149,70 +159,98 @@
 
 <!-- FOOTER -->
 
-    <footer>
-        <div>
-            <h1>delicious</h1>
+<footer class="mainFooter clearfix">
+    <div class="footer wrapper">
+        <div class="footerSection mainFooterInfo">
             <ul>
                 <li>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque, laborum!</p>
+                    <h1>delicious</h1>
                 </li>
+                <li>
+                    <p>Lorem ipsum dolor sit amet, consectetur
+                        <br>adipisicing elit. Itaque, laborum!</p>
+                </li>
+                <div class="footerBorder"></div>
                 <li>
                     <p>A delicious restaurant Toronto, Ontario</p>
                 </li>
+                <div class="footerBorder"></div>
                 <li>
                     <p>yum@food.com</p>
                 </li>
+                <div class="footerBorder"></div>
                 <li>
                     <p>+1 234 567 8910</p>
                 </li>
             </ul>
         </div>
-        <div>
-            <h2>recent posts</h2>
+        <div class="footerSection mainFooterPosts">
+
             <ul>
+                <li>
+                    <h2>recent posts</h2>
+                </li>
                 <li>
                     <a href="#">Beetroot water spinach okra water</a>
                 </li>
+                <div class="footerBorder"></div>
                 <li>
                     <a href="#">Chestnut ricebean pea catsear courgette</a>
                 </li>
+                <div class="footerBorder"></div>
                 <li>
                     <a href="#">S|ummer purslane spinach arugula pea</a>
                 </li>
+                <div class="footerBorder"></div>
                 <li>
                     <a href="#">Tatsoi aubergine spring onion bush</a>
                 </li>
+                <div class="footerBorder"></div>
                 <li>
                     <a href="#">Tomato kale radicchio turnip chicory</a>
                 </li>
+                <div class="footerBorder"></div>
                 <li>
                     <a href="#">Salsify pea sprouts fava bean</a>
                 </li>
             </ul>
         </div>
-        <div>
+        <div class="footerSection mainFooterSubscribe">
             <h2>subscribe now</h2>
-            <p>get all of our newest recipes immediately in your inbox!</p>
-            <input type="text">
-            <a href="">
-                <i class="fab fa-facebook-f"></i>
-            </a>
-            <a href="">
-                <i class="fab fa-twitter"></i>
-            </a>
-            <a href="">
-                <i class="fab fa-instagram"></i>
-            </a>
+            <p>Get all of our newest recipes immediately
+                <br> in your inbox!</p>
+            <div class="formEmail">
+                <input type="text">
+                <button>
+                    <i class="fas fa-arrow-right"></i>
+                </button>
+            </div>
+
+            <div class="socialIcons">
+                <div class="footerBorder"></div>
+                <p>
+                    <a href="">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a href="">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <a href="">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                </p>
+            </div>
         </div>
-    </footer>
-    
-    <!-- SECOND FOOTER -->
-    
-    <footer>
-        <div>
-            <p>Copyrights © 2015 by
-                <a href="#">POLAR</a>. All Rights Reserved. </p>
-        </div>
-    </footer>
+    </div>
+</footer>
+
+<!-- SECOND FOOTER -->
+
+<footer class="secondFooter">
+    <div class="secondFooterInfo">
+        <p>Copyrights © 2015 by
+            <a href="#">POLAR</a>. All Rights Reserved. </p>
+    </div>
+</footer>
 </body>
 </html>
