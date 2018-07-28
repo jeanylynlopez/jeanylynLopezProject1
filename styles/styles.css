@@ -354,6 +354,250 @@ nav li a:hover {
     position: relative;
 }
 
+.blogWrapper {
+    margin: 0 auto;
+    width: 60%;
+    max-width: 650px;
+    /* text-align: left; */
+}
+
+.artcle {
+    text-align: left;
+}
+
+article {
+    margin-top: 100px;
+}
+
+.headByline h6 {
+    margin-top: -20px;
+}
+
+/* ??? IS THERE A BETTER WAY TO TARGET THIS??? */
+
+.blogWrapper h2 {
+    font-family: Raleway;
+    color: #000000;
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 24px;
+    text-align: left;
+}
+
+.blogWrapper h6 {
+    font-family: Raleway;
+    color: #000000;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 26px;
+    text-align: left;
+}
+
+.blogWrapper p {
+    font-family: Lora;
+    color: #666666;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 26px;
+    text-align: left;
+}
+
+
+
+
+.blogtagsSocial a {
+    font-family: Lora;
+    color:  #999999;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 26px;
+    text-align: left;
+    text-decoration: none;
+}
+
+/* ??? BOLD DOESN'T SEEM TO BE WORKNIG ??? */
+
+.blogtagsSocial b {
+    font-family: Raleway;
+    color:  #333333;
+    font-size: 14px;
+    font-weight: 700;
+    font-weight: bold;
+    line-height: 26px;
+    text-align: left;
+    text-transform: uppercase;
+}
+
+.blogtagsSocial i {
+    padding: 10px;
+}
+/* ???need to make these thinner!!!??? */
+
+.blogBorder {
+    /* border: 0.5px solid #999999; */
+    border: 1px solid rgba(153, 153, 153, 0.4);
+    width: 100%;
+    margin: 35px 0px;
+    /* padding: 10px 0px; */
+}
+
+/* --- BLOG AUTHOR BIO --- */
+
+.authorInfo h3 {
+    font-family: Raleway;
+    color: #333333;
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 26px;
+    text-align: left;
+    text-transform: uppercase;
+}
+
+.authorInfo p {
+    font-family: Lora;
+    color: #666666;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 27.5px;
+    text-align: left;
+}
+
+.authorImage {
+    float: left;
+}
+
+.authorImage img {
+    margin-right: 15px;
+}
+
+.authorInfo {
+    width: 71%;
+    padding: 20px;
+    max-height: 219px;
+    background-color: rgb(246, 246, 246);
+    float: left;
+}
+
+/* --- RELATED POSTS --- */
+
+.relatedPosts {
+    padding-left: 0px;
+}
+
+.relatedPosts li {
+    list-style: none;
+}
+
+.post img {
+    width: 100%;
+}
+
+.post {
+    width: 33%;
+    float: left;
+    padding: 0px 5px;
+}
+
+.post a {
+     text-decoration: none;
+}
+
+aside h3 {
+    font-family: Raleway;
+    color:  #333333;
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 26px;
+    text-align: left;
+    text-transform: uppercase;
+}
+
+/* ???DON'T THINK THESE FONTS ARE THE RIGHT SIZE??? */
+
+aside h4 {
+    font-family: Raleway;
+    color:  #333333;
+    font-size: 11.5px;
+    font-weight: 700;
+    line-height: 26px;
+    text-align: left;
+    text-transform: uppercase;
+}
+
+.post h6 {
+    font-family: Lora;
+    color:  #999999;
+    font-size: 8px;
+    font-weight: 400;
+    line-height: 26px;
+    text-align: left;
+    margin-top: -20px;
+}
+
+/* --- BLOG COMMENT SECTION ---  */
+
+.comments {
+    clear: both;
+}
+
+.comments ul {
+    padding-left: 0;
+}
+
+.comments li {
+    list-style: none;
+}
+
+.commentPicture {
+    float: left;
+}
+
+.commentInfo {
+    float: left;
+    width: 85%;
+    background-color: rgb(239, 239, 239);
+    /* padding: 10px; */
+    padding: 10px 10px 0px 20px;
+    margin-bottom: 5px;
+    margin-left: 15px;
+}
+
+.comment h5 {
+    font-family: Raleway;
+    color:  #333333;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 30px;
+    text-align: left;
+}
+
+.comment p {
+    font-family: Lora;
+    color:  #333333;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 21.667px;
+    text-align: left;
+}
+
+.comment h6 {
+    font-family: Raleway;
+    color:  #333333;
+    font-size: 11px;
+    font-weight: 700;
+    line-height: 30px;
+    text-align: left;
+    margin-top: -10px;
+}
+
+.eachComment p {
+    margin-top: -20px;
+}
+
+.eachComment h6 {
+    margin-top: -15px;
+}
+
 /* --- FOOTER --- */
 
 footer h1 {
