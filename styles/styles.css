@@ -240,8 +240,8 @@ nav li a:hover {
 
 .hungryClients {
     background-color: rgb(221, 237, 154);
-    clear: both;
     margin: 0 auto;
+    clear: both;
 }
 
 .hungryClientsContent {
@@ -281,17 +281,9 @@ nav li a:hover {
     right: -60px;
 }
 
-/* ???WHY ISN'T IT CENTERING??? */
-/* ???HOW DO YOU DO THIS THE RIGHT WAY??? */
-
 .hungryClientsButtons {
-    /* margin-left: 250px; */
-    /* margin: 0 auto; */
-    /* display: block; */
-    position: absolute;
-    left: 50%;
-    /* bottom: 10%; */
-
+    display: block;
+    text-align: center;
 }
 
 .hungryClientsButtons i {
@@ -302,9 +294,7 @@ nav li a:hover {
     color: rgba(255,255,255);
     border: none;
     background-color: rgb(221, 237, 154);
-    /* display: inline-block; */
-    /* text-align: center; */
-    padding: 5px;
+    padding: 10px 10px 0px 10px;
 }
 
 .hungryClientsButtons i:hover {
@@ -345,29 +335,36 @@ footer h2 {
 
 .mainFooter {
     background-color: #2e2e2e;
-    padding: 20px;
-    /* margin: ; */
-    /* margin-top: 1px; */
-
+    padding: 20px 0px;
+    margin: 0 auto;
 }
 
-footer li {
+.mainFooter ul {
+    padding: 0;
+}
+
+.mainFooter li {
     list-style: none;
 }
 
-.footerSection {
-    width: 30%;
-    padding: 10px;    
-}
+.mainFooterInfo, .mainFooterPosts, .mainFooterSubscribe {
+    float: left;
+    padding: 0px 45px;
+    /* margin: 0 auto; */
+    /* margin: 0 auto; */
+    /* display: inline-block; */
+    /* margin-right: -4px; */
+    /* display: inline-block; */
+} 
 
 .mainFooterInfo {
-    /* clear: both; */
-    float: left;
+    /* padding-left: 50px; */
+    margin-left: 50px
 }
 
-.mainFooterPosts {
-    float: left;
-
+.mainFooterSubscribe {
+    /* padding-right: 50px; */
+    margin-right: 50px;
 }
 
 .mainFooterPosts a {
@@ -384,21 +381,17 @@ footer li {
     color: white;
 }
 
-.mainFooterSubscribe {
-    float: left;
-}
-
 /* ???CAN WE GET THE BORDER PIXEL THINNER THAN 1PX??? */
 
 .footerBorder {
     width: 250px;
     border-bottom: 1px solid #999999;
-
 }
 
 .socialIcons .footerBorder {
     margin-top: 20px;
 }
+
 
 .socialIcons a {
     text-decoration: none;
@@ -410,3 +403,24 @@ footer li {
     text-align: left;
     padding: 5px;
 }
+
+/* --- SECOND FOOTER --- */
+
+.secondFooter {
+    clear: both;
+    /* color: ; */
+    background-color: #252525;
+    padding: 1px;
+}
+
+.secondFooterInfo {
+    margin-left: 95px;
+}
+
+.secondFooter a {
+    text-decoration: none;
+    color: rgb(100, 166, 4);
+}
+
+/* ??? WHY ISN'T MARGIN 0 AUTO WORKING??? */
+
