@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ"
         crossorigin="anonymous">
     <link rel="stylesheet" href="styles/styles.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 
 <body>
@@ -18,218 +19,220 @@
 <!-- HEADER -->
 
     <!-- ??? need the green icon on the shopping icon??? -->
-    <header class="mainHeader">
-        <div class="wrapper clearfix">
-                <h1>Delicious</h1>
-                <nav class="navigation">
+    <div class="wrapper">
+        <header class="mainHeader">
+            <div class="container clearfix">
+                    <h1>Delicious</h1>
+                    <nav class="navigation">
+                        <ul>
+                            <li>
+                                <a href="#home">home</a>
+                            </li>
+                            <li>
+                                <a href="">about</a>
+                            </li>
+                            <li>
+                                <a href="">recipes</a>
+                            </li>
+                            <li>
+                                <a href="">nurtition</a>
+                            </li>
+                            <li>
+                                <a href="#blog">blog</a>
+                            </li>
+                            <li>
+                                <a href="">shop</a>
+                            </li>
+                            <li>
+                                <a href="#contact">contact</a>
+                            </li>
+                            <li>
+                                <a href="#"><i class="fas fa-shopping-bag"></i></a>
+                            </li>
+                            <li>
+                                <a href=""><i class="fas fa-search"></i></a>
+                            </li>
+                        </ul>
+                    </nav>
+                <!-- </div> -->
+            </div>
+        </header> 
+
+        <!-- MAIN AND SECTIONS -->
+
+        <main>
+
+    <!-- MOST POPULAR RECIPES SECTION -->
+
+            <section class="popularRecipes">
+                <div class="container">
+                    <div class="popularRecipesContent">
+                        <h2>most popular recipes</h2>
+                        <div class="border"></div>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quia alias inventore doloremque officia, non reprehenderit voluptates ducimus earum dignissimos ratione libero adipisci corporis iure. Voluptatum delectus harum quae blanditiis quos?</p>
+                        <button>view recipes</button>
+                    </div>
+                    <div>
+                        <img src="assets/home-2.jpeg" alt="lettuce in a bowl that looks really yummy">
+                    </div>
+                </div>
+            </section>
+
+            <section class="foodOptions clearfix">
+                <div>
+                    <img src="assets/home-3.jpeg" alt="yummy tacos">
+                </div>
+                <div class="foodOptionsContent container">
                     <ul>
-                        <li>
-                            <a href="#home">home</a>
+                        <li class="food clearfix">
+                            <!-- <i class="fas fa-lemon"></i> -->
+                            <div class="foodContent">
+                                <h3>vegetarian</h3>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere, quidem provident porro quibusdam voluptates veniam?</p>
+                            </div>
                         </li>
-                        <li>
-                            <a href="">about</a>
+                        <li class="food">
+                            <!-- <i class="fas fa-utensils"></i> -->
+                            <div class="foodContent">
+                                <h3>appetizers</h3>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi voluptates ad eos quam et reiciendis!</p>
+                            </div>
                         </li>
-                        <li>
-                            <a href="">recipes</a>
+                        <li class="food">
+                            <!-- <i class="fas fa-coffee"></i> -->
+                            <div class="foodContent">
+                                <h3>desserts</h3>
+                                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deserunt voluptas eum eius optio doloribus itaque!</p>
+                            </div>
                         </li>
-                        <li>
-                            <a href="">nurtition</a>
+                        <li class="food">
+                            <!-- <i class="fas fa-glass-martini"></i> -->
+                            <div class="foodContent">
+                                <h3>drinks</h3>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda, veritatis minima laboriosam ex commodi nesciunt.</p>
+                            </div>
                         </li>
-                        <li>
-                            <a href="#blog">blog</a>
+                        <li class="food">
+                            <!-- <i class="fas fa-leaf"></i> -->
+                            <div class="foodContent">
+                                <h3>salads</h3>
+                                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Excepturi nihil, ipsum sequi incidunt doloribus est!</p>
+                            </div>
                         </li>
-                        <li>
-                            <a href="">shop</a>
-                        </li>
-                        <li>
-                            <a href="#contact">contact</a>
-                        </li>
-                        <li>
-                            <a href="#"><i class="fas fa-shopping-bag"></i></a>
-                        </li>
-                        <li>
-                            <a href=""><i class="fas fa-search"></i></a>
+                        <li class="food">
+                            <!-- <i class="fas fa-utensil-spoon"></i> -->
+                            <div class="foodContent">
+                                <h3>side dishes</h3>
+                                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsum, dolorem suscipit iure amet velit deleniti.</p>
+                            </div>
                         </li>
                     </ul>
-                </nav>
-            <!-- </div> -->
-        </div>
-    </header> 
+                </div>
+            </section>
 
-    <!-- MAIN AND SECTIONS -->
-
-    <main>
-
-<!-- MOST POPULAR RECIPES SECTION -->
-
-        <section class="popularRecipes">
-            <div class="wrapper">
-                <div class="popularRecipesContent">
-                    <h2>most popular recipes</h2>
+            <section class="ourRestaurants">
+                <img src="assets/home-4.jpeg" alt="restaurant with tables" class="restaurantImage">
+                <img src="assets/home-circle-text.png" alt="a type of logo that says: a fancy food place yummy" class="circleText">
+                <div class="ourRestaurantsContent">
+                    <h2>our restaurants</h2>
                     <div class="border"></div>
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quia alias inventore doloremque officia, non reprehenderit voluptates ducimus earum dignissimos ratione libero adipisci corporis iure. Voluptatum delectus harum quae blanditiis quos?</p>
-                    <button>view recipes</button>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sapiente, perspiciatis! Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio, suscipit?</p>
                 </div>
-                <div>
-                    <img src="assets/home-2.jpeg" alt="lettuce in a bowl that looks really yummy">
+            </section>
+
+            <section class="imageGrid clearfix">
+                <img src="assets/home-5.jpeg" alt="yummy bowl of food">
+                <img src="assets/home-6.jpeg" alt="a yummy burger that looks pretty">
+                <img src="assets/home-7.jpeg" alt="a bunch of red onions displayed nicely">
+                <img src="assets/home-8.jpeg" alt="a pretty pink cake">
+                <img src="assets/home-9.jpeg" alt="blue">
+                <img src="assets/home-10.jpeg" alt="tzatziki dip">
+            </section>
+
+            <section class="hungryClients">
+                <div class="hungryClientsContent">
+                    <h2>hungry clients</h2>
+                    <div class="border"></div>
+                    <div class="hungryClientsParagraph">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore hic, assumenda quibusdam delectus deleniti dolorum doloribus? Consectetur quo, iusto ut tenetur neque nostrum cumque! Non? Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic dignissimos asperiores soluta! Lorem ipsum dolor sit amet.</p> 
+                    </div>
+                    <div class="hungryClientsButtons">
+                        <a href="#"><i class="leftangle fas fa-angle-left"></i></button></a>
+                        <a href ="#"><i class="rightangle fas fa-angle-right"></i></button></a>
+                    </div>
                 </div>
-            </div>
-        </section>
+            </section>
+        </main>
+        
+        <!-- FIRST FOOTER -->
 
-        <section class="foodOptions clearfix">
-            <div>
-                <img src="assets/home-3.jpeg" alt="yummy tacos">
-            </div>
-            <div class="foodOptionsContent wrapper">
-                <ul>
-                    <li class="food clearfix">
-                        <!-- <i class="fas fa-lemon"></i> -->
-                        <div class="foodContent">
-                            <h3>vegetarian</h3>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere, quidem provident porro quibusdam voluptates veniam?</p>
-                        </div>
-                    </li>
-                    <li class="food">
-                        <!-- <i class="fas fa-utensils"></i> -->
-                        <div class="foodContent">
-                            <h3>appetizers</h3>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi voluptates ad eos quam et reiciendis!</p>
-                        </div>
-                    </li>
-                    <li class="food">
-                        <!-- <i class="fas fa-coffee"></i> -->
-                        <div class="foodContent">
-                            <h3>desserts</h3>
-                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deserunt voluptas eum eius optio doloribus itaque!</p>
-                        </div>
-                    </li>
-                    <li class="food">
-                        <!-- <i class="fas fa-glass-martini"></i> -->
-                        <div class="foodContent">
-                            <h3>drinks</h3>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda, veritatis minima laboriosam ex commodi nesciunt.</p>
-                        </div>
-                    </li>
-                    <li class="food">
-                        <!-- <i class="fas fa-leaf"></i> -->
-                        <div class="foodContent">
-                            <h3>salads</h3>
-                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Excepturi nihil, ipsum sequi incidunt doloribus est!</p>
-                        </div>
-                    </li>
-                    <li class="food">
-                        <!-- <i class="fas fa-utensil-spoon"></i> -->
-                        <div class="foodContent">
-                            <h3>side dishes</h3>
-                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsum, dolorem suscipit iure amet velit deleniti.</p>
-                        </div>
-                    </li>
-                </ul>
-            </div>
-        </section>
-
-        <section class="ourRestaurants">
-            <img src="assets/home-4.jpeg" alt="restaurant with tables" class="restaurantImage">
-            <img src="assets/home-circle-text.png" alt="a type of logo that says: a fancy food place yummy" class="circleText">
-            <div class="ourRestaurantsContent">
-                <h2>our restaurants</h2>
-                <div class="border"></div>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sapiente, perspiciatis! Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio, suscipit?</p>
-            </div>
-        </section>
-
-        <section class="imageGrid clearfix">
-            <img src="assets/home-5.jpeg" alt="yummy bowl of food">
-            <img src="assets/home-6.jpeg" alt="a yummy burger that looks pretty">
-            <img src="assets/home-7.jpeg" alt="a bunch of red onions displayed nicely">
-            <img src="assets/home-8.jpeg" alt="a pretty pink cake">
-            <img src="assets/home-9.jpeg" alt="blue">
-            <img src="assets/home-10.jpeg" alt="tzatziki dip">
-        </section>
-
-        <section class="hungryClients">
-            <div class="hungryClientsContent">
-                <h2>hungry clients</h2>
-                <div class="border"></div>
-                <div class="hungryClientsParagraph">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore hic, assumenda quibusdam delectus deleniti dolorum doloribus? Consectetur quo, iusto ut tenetur neque nostrum cumque! Non? Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic dignissimos asperiores soluta! Lorem ipsum dolor sit amet.</p> 
+        <footer class="mainFooter clearfix">
+            <div class="footer container">
+                <div class="footerSection mainFooterInfo">
+                    <ul>
+                        <li><h1>delicious</h1></li>
+                        <li>
+                            <p>Lorem ipsum dolor sit amet, consectetur <br>adipisicing elit. Itaque, laborum!</p>
+                        </li>
+                        <div class="footerBorder"></div>
+                        <li>
+                            <p>A delicious restaurant Toronto, Ontario</p>
+                        </li>
+                        <div class="footerBorder"></div>
+                        <li>
+                            <p>yum@food.com</p>
+                        </li>
+                        <div class="footerBorder"></div>
+                        <li>
+                            <p>+1 234 567 8910</p>
+                        </li>
+                    </ul>
                 </div>
-                <div class="hungryClientsButtons">
-                    <a href="#"><i class="leftangle fas fa-angle-left"></i></button></a>
-                    <a href ="#"><i class="rightangle fas fa-angle-right"></i></button></a>
+                <div class="footerSection mainFooterPosts">
+                    
+                    <ul>
+                        <li><h2>recent posts</h2></li>
+                        <li><a href="#">Beetroot water spinach okra water</a></li>
+                        <div class="footerBorder"></div>
+                        <li><a href="#">Chestnut ricebean pea catsear courgette</a></li>
+                        <div class="footerBorder"></div>
+                        <li><a href="#">S|ummer purslane spinach arugula pea</a></li>
+                        <div class="footerBorder"></div>
+                        <li><a href="#">Tatsoi aubergine spring onion bush</a></li>
+                        <div class="footerBorder"></div>
+                        <li><a href="#">Tomato kale radicchio turnip chicory</a></li>
+                        <div class="footerBorder"></div>
+                        <li><a href="#">Salsify pea sprouts fava bean</a></li>
+                    </ul>
+                </div>
+                <div class="footerSection mainFooterSubscribe">
+                    <h2>subscribe now</h2>
+                    <p>Get all of our newest recipes immediately <br> in your inbox!</p>
+                    <div class="formEmail">
+                        <input type="text">
+                        <button><i class="fas fa-arrow-right"></i></button>
+                    </div>
+                    
+                    <div class="socialIcons">
+                        <div class="footerBorder"></div>
+                        <p>
+                            <a href=""><i class="fab fa-facebook-f"></i></a>
+                            <a href=""><i class="fab fa-twitter"></i></a>
+                            <a href=""><i class="fab fa-instagram"></i></a
+                        ></p>
+                    </div>
                 </div>
             </div>
-        </section>
-    </main>
-    
-    <!-- FIRST FOOTER -->
+        </footer>
 
-    <footer class="mainFooter clearfix">
-        <div class="footer wrapper">
-            <div class="footerSection mainFooterInfo">
-                <ul>
-                    <li><h1>delicious</h1></li>
-                    <li>
-                        <p>Lorem ipsum dolor sit amet, consectetur <br>adipisicing elit. Itaque, laborum!</p>
-                    </li>
-                    <div class="footerBorder"></div>
-                    <li>
-                        <p>A delicious restaurant Toronto, Ontario</p>
-                    </li>
-                    <div class="footerBorder"></div>
-                    <li>
-                        <p>yum@food.com</p>
-                    </li>
-                    <div class="footerBorder"></div>
-                    <li>
-                        <p>+1 234 567 8910</p>
-                    </li>
-                </ul>
-            </div>
-            <div class="footerSection mainFooterPosts">
-                
-                <ul>
-                    <li><h2>recent posts</h2></li>
-                    <li><a href="#">Beetroot water spinach okra water</a></li>
-                    <div class="footerBorder"></div>
-                    <li><a href="#">Chestnut ricebean pea catsear courgette</a></li>
-                    <div class="footerBorder"></div>
-                    <li><a href="#">S|ummer purslane spinach arugula pea</a></li>
-                    <div class="footerBorder"></div>
-                    <li><a href="#">Tatsoi aubergine spring onion bush</a></li>
-                    <div class="footerBorder"></div>
-                    <li><a href="#">Tomato kale radicchio turnip chicory</a></li>
-                    <div class="footerBorder"></div>
-                    <li><a href="#">Salsify pea sprouts fava bean</a></li>
-                </ul>
-            </div>
-            <div class="footerSection mainFooterSubscribe">
-                <h2>subscribe now</h2>
-                <p>Get all of our newest recipes immediately <br> in your inbox!</p>
-                <div class="formEmail">
-                    <input type="text">
-                    <button><i class="fas fa-arrow-right"></i></button>
-                </div>
-                
-                <div class="socialIcons">
-                    <div class="footerBorder"></div>
-                    <p>
-                        <a href=""><i class="fab fa-facebook-f"></i></a>
-                        <a href=""><i class="fab fa-twitter"></i></a>
-                        <a href=""><i class="fab fa-instagram"></i></a
-                    ></p>
-                </div>
-            </div>
-        </div>
-    </footer>
+        <!-- SECOND FOOTER -->
 
-    <!-- SECOND FOOTER -->
-
-    <footer class="secondFooter">
-        <div class="secondFooterInfo">
-            <p>Copyrights © 2015 by <a href="#">POLAR</a>. All Rights Reserved. </p>
-        </div>
-    </footer>
+        <footer class="secondFooter">
+            <div class="secondFooterInfo">
+                <p>Copyrights © 2015 by <a href="#">POLAR</a>. All Rights Reserved. </p>
+            </div>
+        </footer>
+    </div>
 </body>
 
 </html>
