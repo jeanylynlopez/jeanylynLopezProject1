@@ -6,6 +6,7 @@ article,aside,details,figcaption,figure,footer,header,hgroup,nav,section,summary
 
 /* Table of Contents:
     - Wrapper 
+    - Main fonts 
     - Index
         - Header & Navigation 
         - Main section: 
@@ -24,10 +25,7 @@ article,aside,details,figcaption,figure,footer,header,hgroup,nav,section,summary
     - Contact form 
         - Header & Navigation
         - Footer
-
-            
 */
-
 
 /* --- WRAPPER FOR ALL PAGES --- */
 
@@ -38,25 +36,41 @@ article,aside,details,figcaption,figure,footer,header,hgroup,nav,section,summary
 
 /* ---FONTS--- */
 
+/* used for main logo "Delicious" */
+
 h1 {
     font-family: 'Raleway', sans-serif;
     color:  #000000;
-    font-size: 45.83px;
-    font-weight: 700;
     line-height: 24px;
-    text-align: left;
-    text-transform: uppercase;
-
+    font-weight: 700;
 }
 
 h2 {
-    font-family: Raleway;
-    color: #000000;
-    font-size: 30px;
-    font-weight: 700;
-    text-transform: uppercase;
+    font-family: 'Raleway', sans-serif;
+    color:  #000000;
     line-height: 24px;
-    text-align: center;
+    font-weight: 700;
+}
+
+h3 {
+    font-family: 'Raleway', sans-serif;
+    color: #333333;
+    line-height: 26px;
+    font-weight: 700;
+}
+
+h4 {
+    font-family: 'Raleway', sans-serif;
+    color: #333333;
+    line-height: 26px;
+    font-weight: 700;
+}
+
+h5 {
+    font-family: 'Raleway', sans-serif;
+    color:  #333333;
+    font-weight: 700;
+    line-height: 30px;
 }
 
 p {
@@ -65,22 +79,35 @@ p {
     font-size: 14px;
     font-weight: 400;
     line-height: 24px;
-    text-align: center;
+}
+
+b {
+    font-family: Raleway;
+    color:  #333333;
+    font-size: 14px;
+    font-weight: 700;
+    font-weight: bold;
+    line-height: 26px;
+}
+
+/* ???HOW TO TARGET THE PADDING ON THE LISTS??? */
+
+li {
+    list-style: none;
 }
 
 /* --- HEADER--- */
 
-header .container {
-    width: 100%;
-    max-width: 1200px;
-    margin: 0 auto;
-}
+/* ???position relative / absolute on header h1, .mainheder, .navigation. is that necessay??? */
 
 header h1 {
     float: left;
     position: absolute;
     top: 0px;
     left: 15px;
+    font-size: 45.83px;
+    text-align: left;
+    text-transform: uppercase;
 }
 
 .mainHeader {
@@ -107,11 +134,10 @@ nav {
 }
 
 nav li {
-    list-style: none;
     float: left;
 }
 
-nav li a {
+nav a {
     font-family: 'Raleway', sans-serif;
     color: black;
     text-transform: uppercase;
@@ -124,20 +150,17 @@ nav li a {
     text-decoration: none;
 }
 
-nav li a:hover {
+nav a:hover {
     color:rgb(100, 166, 4);
 }
 
-/* ---MOST POPULAR RECIPES SECTION AND FOOD OPTIONS SECTION--- */
+/* ---POPULAR RECIPES SECTION--- */
 
-    /* ??? is it best to have the whole thing in a wrapper??? */
-
-.popularRecipes .container {
-    width: 100%;
-    margin: 0 auto;
+.popularRecipesContent h1 {
+    font-size: 30px;
+    text-align: center;
+    text-transform: uppercase;
 }
-
-    /* ???I think calc can be used somewhere here??? */
 
 .popularRecipesContent, .foodOptionsContent  {
     width: 50%;
@@ -153,6 +176,8 @@ nav li a:hover {
     padding: 70px 50px;
     text-align: center;
 }
+
+/* --- BORDER ALSO USED IN OUR RESTAURANTS AND HUNGRY CLIENTS SECTION --- */
 
 .border {
     border-bottom: 4px solid rgb(100, 166, 4);
@@ -170,39 +195,48 @@ nav li a:hover {
     border: none;
 }
 
-    /* ???add transition on the hover if you have time!??? */
-
 .popularRecipes button:hover {
     background-color: rgba(100, 166, 4, 0.7);
 }
 
-/* --- FOOD OPTIONS --- */
+/* --- FOOD OPTIONS SECTION --- */
 
-.foodOptionsContent li {
-    list-style:  none;
+.food {
+    position: relative;
+    width: 47%;
+    float: left;
 }
-
-/* .foodContent h3::before {
-    position: absolute;
-    left: 20px;
-} */
 
 .foodContent {
     padding: 15px;
     max-height: 150px;
 }
 
-.food {
-    position: relative;
+.foodContent p {
+    margin-top: -20px;
+}
+
+.food h1 {
+    font-size: 18px;
+    line-height: 36px;
+    text-align: left;
+    text-transform: uppercase;
+}
+
+.food p {
+    color:  #999999;
+    font-size: 13px;
+    line-height: 24px;
+    text-align: left;
+    text-align: left;
+    clear: both;
 }
 
 .foodOptionsContent li::before {
     font-family: 'Font Awesome\ 5 Free';
-    color:  #333333;
+    color: #333333;
     font-size: 18px;
     font-weight: 900;
-    line-height: 24px;
-    text-align: left;
     position: absolute;
     left: -10px;
     top: 40px;
@@ -232,40 +266,6 @@ nav li a:hover {
     content: "\f2e5";
 }
 
-.foodContent p {
-    margin-top: -20px;
-}
-
-.food {
-    width: 47%;
-    /* min-height: 220px; */
-    /* padding-left: 15px; */
-    float: left;
-}
-
-.food h3 {
-    font-family: Raleway;
-    color:  #000000;
-    font-size: 18px;
-    font-weight: 700;
-    line-height: 36px;
-    text-align: left;
-    text-transform: uppercase;
-    /* margin-bottom: 5px; */
-}
-
-.food p {
-    
-    font-family: Lora;
-    color:  #999999;
-    font-size: 13px;
-    font-weight: 400;
-    line-height: 25px;
-    text-align: left;
-    clear: both;
-    text-align: left;
-}
-
 /* --- OUT RESTAURANTS SECTION -- */
 
 .ourRestaurants {
@@ -273,6 +273,18 @@ nav li a:hover {
     padding: 50px;
     width: 100%;
     position: relative;
+}
+
+.ourRestaurantsContent h1 {
+    font-size: 30px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.ourRestaurantsContent p {
+    font-family: Lora;
+    color:  #999999;
+    text-align: center;
 }
 
 .restaurantImage {
@@ -299,19 +311,31 @@ nav li a:hover {
     margin-bottom: 20px;
 }
 
-/* --- IMAGES --- */
+/* --- IMAGES 6x2 GRID --- */
 
 .imageGrid img {
     width: 33%;
     float: left;
 }
 
-/* --- HUNGRY CLIENTS --- */
+/* --- HUNGRY CLIENTS SECTION --- */
 
 .hungryClients {
     background-color: rgb(221, 237, 154);
     margin: 0 auto;
     clear: both;
+}
+
+.hungryClients h1 { 
+    font-size: 30px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.hungryClients p {
+    color: #000000;
+    font-style: italic;
+    text-align: center;
 }
 
 .hungryClientsContent {
@@ -334,10 +358,6 @@ nav li a:hover {
 	top: -25px;
     left: -60px;
 }
-
-/* --- THIS IS FOR the QUOTES --- */
-
-/* MAKE THE QUOTES TRANSPARENT  */
 
 .hungryClientsParagraph::after {
     content: "\f10e";
@@ -371,7 +391,7 @@ nav li a:hover {
     color: rgba(255,255,255, 0.6)
 }
 
-/* --- BLOG HEADER --- */
+/* --- BLOG SECTION --- */
 
 .blogHeader {
     height: 100vh;
@@ -382,56 +402,37 @@ nav li a:hover {
     position: relative;
 }
 
-.blogWrapper {
+.blogContainer {
     margin: 0 auto;
     width: 60%;
     max-width: 650px;
-    /* text-align: left; */
 }
 
-.artcle {
+/* --- ARTICLE SECTION --- */
+
+.article {
     text-align: left;
-}
-
-article {
     margin-top: 100px;
 }
 
-.headByline h6 {
+.headByline h1 {
     margin-top: -20px;
-}
-
-/* ??? IS THERE A BETTER WAY TO TARGET THIS??? */
-
-.blogWrapper h2 {
-    font-family: Raleway;
-    color: #000000;
     font-size: 36px;
-    font-weight: 700;
-    line-height: 24px;
     text-align: left;
+    text-transform: uppercase;
 }
 
-.blogWrapper h6 {
-    font-family: Raleway;
-    color: #000000;
+.headByline h2 {
     font-size: 13px;
-    font-weight: 400;
-    line-height: 26px;
+    margin-top: -20px;
     text-align: left;
 }
 
-.blogWrapper p {
-    font-family: Lora;
-    color: #666666;
-    font-size: 14px;
-    font-weight: 400;
-    line-height: 26px;
+.article p {
     text-align: left;
 }
 
-
-
+/* --- TAGS AND SOCIAL ICONS --- */
 
 .blogtagsSocial a {
     font-family: Lora;
@@ -443,15 +444,7 @@ article {
     text-decoration: none;
 }
 
-/* ??? BOLD DOESN'T SEEM TO BE WORKNIG ??? */
-
 .blogtagsSocial b {
-    font-family: Raleway;
-    color:  #333333;
-    font-size: 14px;
-    font-weight: 700;
-    font-weight: bold;
-    line-height: 26px;
     text-align: left;
     text-transform: uppercase;
 }
@@ -459,34 +452,23 @@ article {
 .blogtagsSocial i {
     padding: 10px;
 }
-/* ???need to make these thinner!!!??? */
 
 .blogBorder {
-    /* border: 0.5px solid #999999; */
     border: 1px solid rgba(153, 153, 153, 0.4);
     width: 100%;
     margin: 35px 0px;
-    /* padding: 10px 0px; */
 }
 
-/* --- BLOG AUTHOR BIO --- */
+/* --- AUTHOR BIO --- */
 
 .authorInfo h3 {
-    font-family: Raleway;
-    color: #333333;
     font-size: 15px;
-    font-weight: 700;
-    line-height: 26px;
     text-align: left;
     text-transform: uppercase;
 }
 
 .authorInfo p {
-    font-family: Lora;
     color: #666666;
-    font-size: 14px;
-    font-weight: 400;
-    line-height: 27.5px;
     text-align: left;
 }
 
@@ -509,11 +491,30 @@ article {
 /* --- RELATED POSTS --- */
 
 .relatedPosts {
+    width: 100%;
+}
+
+.relatedPosts ul {
     padding-left: 0px;
 }
 
-.relatedPosts li {
-    list-style: none;
+.relatedPosts h3 {
+    font-size: 15px;
+    text-align: left;
+    text-transform: uppercase;
+}
+
+.post h4 {
+    font-size: 11.5px;
+    text-align: left;
+    text-transform: uppercase;
+}
+
+.post p {
+    color:  #999999;
+    font-size: 8px;
+    text-align: left;
+    margin-top: -20px;
 }
 
 .post img {
@@ -530,39 +531,7 @@ article {
      text-decoration: none;
 }
 
-aside h3 {
-    font-family: Raleway;
-    color:  #333333;
-    font-size: 15px;
-    font-weight: 700;
-    line-height: 26px;
-    text-align: left;
-    text-transform: uppercase;
-}
-
-/* ???DON'T THINK THESE FONTS ARE THE RIGHT SIZE??? */
-
-aside h4 {
-    font-family: Raleway;
-    color:  #333333;
-    font-size: 11.5px;
-    font-weight: 700;
-    line-height: 26px;
-    text-align: left;
-    text-transform: uppercase;
-}
-
-.post h6 {
-    font-family: Lora;
-    color:  #999999;
-    font-size: 8px;
-    font-weight: 400;
-    line-height: 26px;
-    text-align: left;
-    margin-top: -20px;
-}
-
-/* --- BLOG COMMENT SECTION ---  */
+/* --- COMMENT SECTION ---  */
 
 .comments {
     clear: both;
@@ -572,8 +541,32 @@ aside h4 {
     padding-left: 0;
 }
 
-.comments li {
-    list-style: none;
+.eachComment h3 {
+    font-size: 15px;
+    line-height: 30px;
+    text-align: left;
+    text-transform: uppercase;
+}
+
+.eachComment h4 {
+    font-size: 14px;
+    line-height: 30px;
+    text-align: left;
+    margin-top: 15px;
+}
+
+.eachComment h5 {
+    font-size: 11px;
+    text-align: left;
+    margin-top: -15px;
+}
+
+.eachComment p {
+    color: #333333;
+    font-size: 13px;
+    line-height: 21.667px;
+    text-align: left;
+    margin-top: -20px;
 }
 
 .commentPicture {
@@ -584,70 +577,26 @@ aside h4 {
     float: left;
     width: 85%;
     background-color: rgb(239, 239, 239);
-    /* padding: 10px; */
-    padding: 10px 10px 0px 20px;
+    padding: 0px 10px 0px 20px;
     margin-bottom: 5px;
     margin-left: 15px;
 }
 
-.comment h5 {
-    font-family: Raleway;
-    color:  #333333;
-    font-size: 14px;
-    font-weight: 700;
-    line-height: 30px;
-    text-align: left;
-}
-
-.comment p {
-    font-family: Lora;
-    color:  #333333;
-    font-size: 13px;
-    font-weight: 400;
-    line-height: 21.667px;
-    text-align: left;
-}
-
-.comment h6 {
-    font-family: Raleway;
-    color:  #333333;
-    font-size: 11px;
-    font-weight: 700;
-    line-height: 30px;
-    text-align: left;
-    margin-top: -10px;
-}
-
-.eachComment p {
-    margin-top: -20px;
-}
-
-.eachComment h6 {
-    margin-top: -15px;
-}
-
-/* --- LEAVE A COMMENT SECTION --- */
+/* ---COMMENT FORM --- */
 
 .commentForm h3 {
-    font-family: Raleway;
-    color:  #333333;
     font-size: 15px;
-    font-weight: 700;
-    line-height: 26px;
     text-align: left;
     text-transform: uppercase;
 }
 
 .commentForm p {
-    font-family: Lora;
     color:  #999999;
     font-size: 13px;
     font-style: italic;
     line-height: 26px;
     text-align: left;
 }
-
- /* ???read an article about best naming conventions??? */
 
 .nameInput, .emailInput, .siteInput, .commentInput {
     font-family: Lora;
