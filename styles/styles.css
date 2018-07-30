@@ -4,6 +4,33 @@ article,aside,details,figcaption,figure,footer,header,hgroup,nav,section,summary
 
 * { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
 
+/* Table of Contents:
+    - Wrapper 
+    - Index
+        - Header & Navigation 
+        - Main section: 
+            - Popular recipes 
+            - Food options 
+            - Our restaurants 
+            - Image grid 
+            - Hungry clients
+        - Footer
+    - Blog 
+        - Header & Navigation
+        - 
+        - 
+        - 
+        - Footer
+    - Contact form 
+        - Header & Navigation
+        - Footer
+
+            
+*/
+
+
+/* --- WRAPPER FOR ALL PAGES --- */
+
 .wrapper {
      max-width: 1500px;
      margin: 0 auto;
@@ -150,10 +177,6 @@ nav li a:hover {
 }
 
 /* --- FOOD OPTIONS --- */
-
-.foodOptionsContent ul {
-    /* position: relative; */
-}
 
 .foodOptionsContent li {
     list-style:  none;
@@ -626,13 +649,23 @@ aside h4 {
 
  /* ???read an article about best naming conventions??? */
 
+.nameInput, .emailInput, .siteInput, .commentInput {
+    font-family: Lora;
+    color:  #999999;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 26px;
+    text-align: left;
+    background-color: rgb(255, 255, 255);
+}
+
 .nameInput, .emailInput {
-    margin-right: 15px;
+    margin-right: 17px;
 }
 
 .nameInput, .emailInput, .siteInput {
     width: 31%;
-    padding: 5px;
+    padding: 5px 15px;
     border: 1px solid  rgba(204, 204, 204, 50);
 }
 
@@ -641,6 +674,7 @@ aside h4 {
     height: 180px;
     margin: 15px 0px;
     border: 1px solid  rgba(204, 204, 204, 50);
+    padding: 5px 15px;
 }
 
 .blogSubmitButton {
@@ -657,6 +691,132 @@ aside h4 {
     text-align: left;
     text-transform: uppercase;
     text-align: center;
+}
+
+/* --- CONTACT PAGE --- */
+
+.contactPageForm {
+    width: 40%;
+    margin-left: 150px;
+    font-family: Lora;
+    color:  #999999;
+    font-size: 14px;
+    font-weight: 400;
+    text-align: left;
+    float: left;
+}
+
+.contactPageForm h2 {
+    font-family: Raleway;
+    color:  #333333;
+    font-size: 25px;
+    font-weight: 700;
+    line-height: 80px;
+    text-align: left;
+    margin-top: 50px;
+}
+
+.contactPageForm form {
+    margin-top: -10px;
+} 
+
+.contactPageForm form input {
+    margin-bottom: 20px;
+}
+
+.contactPageForm textarea {
+    margin-bottom: 5px;
+}
+
+.contactPageFormName, .contactPageFormEmail, .contactPageFormSubject, .contactPageFormCommentInput {
+    border: 1px solid rgb(246, 246, 246);
+    background-color: rgb(246, 246, 246);
+}
+
+.contactPageFormName, .contactPageFormEmail {
+    width: 48%;
+    margin-bottom: 0px;
+}
+
+.contactPageFormName, .contactPageFormEmail, .contactPageFormSubject {
+    padding: 5px 15px;
+}
+
+.contactPageFormSubject, .contactPageFormCommentInput {
+    width: 100%;
+}
+
+.contactPageFormName {
+    margin-right: 10px;
+}
+
+.contactPageFormSubject {
+    margin-top: -200px;
+}
+
+.contactPageFormCommentInput {
+    padding: 5px 15px;
+} 
+
+.contactSubmitMessage {
+    border: none;
+    background-color: white;
+    text-transform: uppercase;
+    font-family: Raleway;
+    color:  #64a604;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 80px;
+    text-align: left;
+}
+
+.contactAside {
+    background-color: rgb(246, 246, 246);
+    width: 30%;
+    padding: 20px;
+    /* clear: both; */
+    float: left;
+    margin-left: 100px;
+}
+
+.contactAside h2 {
+    font-family: Raleway;
+    color:  #333333;
+    font-size: 25px;
+    font-weight: 700;
+    /* line-height: 80px; */
+    text-align: left;
+}
+
+.contactAside h3 {
+    font-family: Raleway;
+    color:  #333333;
+    font-size: 18px;
+    font-weight: 700;
+    text-align: left;
+}
+
+/* ???this is being targeted somewhere else??? */
+
+.contactAside h4 {
+    font-family: Lora;
+    color:  #999999;
+    font-size: 13px;
+    font-weight: 400;
+    text-align: left;
+    text-transform: lowercase;
+}
+
+.contactAside p {
+    font-family: Lora;
+    color:  #666666;
+    font-size: 14px;
+    font-weight: 400;
+    text-align: left;
+}
+
+.contactDetails {
+    clear: both;
 }
 
 /* --- FOOTER --- */
@@ -695,6 +855,7 @@ footer h2 {
     background-color: #2e2e2e;
     padding: 20px 0px;
     margin: 0 auto;
+    clear: both;
 }
 
 .mainFooter ul {
@@ -750,7 +911,6 @@ footer h2 {
     margin-top: 20px;
 }
 
-
 .socialIcons a {
     text-decoration: none;
     font-family: Lora;
@@ -770,7 +930,6 @@ footer h2 {
 
 .secondFooter {
     clear: both;
-    /* color: ; */
     background-color: #252525;
     padding: 1px;
 }
