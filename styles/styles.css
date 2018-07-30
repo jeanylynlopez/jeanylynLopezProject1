@@ -842,13 +842,12 @@ footer h2 {
     text-transform: uppercase;
 }
 
-.mainFooterInfo, .mainFooterPosts, .mainFooterSubscribe {
-    float: left;
-    padding: 0px 45px;
-} 
 
-.mainFooterInfo {
-    margin-left: 100px;
+.footerSection {
+    float: left;
+    margin: 0px 30px;
+    padding: 10px 50px;
+    width: calc((100% / 3) - (30px * 2));
 }
 
 .mainFooterPosts a {
