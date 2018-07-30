@@ -4,8 +4,8 @@ article,aside,details,figcaption,figure,footer,header,hgroup,nav,section,summary
 
 * { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
 
-/* Table of Contents:
-    - Wrapper 
+/* Table of contents 
+ - Wrapper 
     - Main fonts 
     - Index
         - Header & Navigation 
@@ -16,16 +16,22 @@ article,aside,details,figcaption,figure,footer,header,hgroup,nav,section,summary
             - Image grid 
             - Hungry clients
         - Footer
+
     - Blog 
-        - Header & Navigation
-        - 
-        - 
-        - 
+        - Header & Navigation 
+        - Article 
+        - Tags and social icons
+        - Author bio
+        - Related posts
+        - Comments
+        - Form
         - Footer
+
     - Contact form 
         - Header & Navigation
-        - Footer
-*/
+        - Contact form 
+        - Contact details
+        - Footer */
 
 /* --- WRAPPER FOR ALL PAGES --- */
 
@@ -827,12 +833,12 @@ footer h2 {
 
 .mainFooterInfo {
     /* padding-left: 50px; */
-    margin-left: 100px
+    margin-left: 100px;
 }
 
 .mainFooterSubscribe {
     /* padding-right: 50px; */
-    margin-right: 100px;
+    /* margin-right: 100px; */
 }
 
 .mainFooterPosts a {
