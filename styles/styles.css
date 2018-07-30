@@ -42,8 +42,6 @@ article,aside,details,figcaption,figure,footer,header,hgroup,nav,section,summary
 
 /* ---FONTS--- */
 
-/* used for main logo "Delicious" */
-
 h1 {
     font-family: 'Raleway', sans-serif;
     color:  #000000;
@@ -96,8 +94,6 @@ b {
     line-height: 26px;
 }
 
-/* ???HOW TO TARGET THE PADDING ON THE LISTS??? */
-
 li {
     list-style: none;
 }
@@ -105,6 +101,8 @@ li {
 /* --- HEADER--- */
 
 /* ???position relative / absolute on header h1, .mainheder, .navigation. is that necessay??? */
+
+/* ???Can you use float right??? */
 
 header h1 {
     float: left;
@@ -159,6 +157,18 @@ nav a {
 nav a:hover {
     color:rgb(100, 166, 4);
 }
+
+.shop {
+    position: relative;
+}
+
+/* .shop a {
+    position: absolute;
+}
+
+.shop a:after {
+    content: "2";
+} */
 
 /* ---POPULAR RECIPES SECTION--- */
 
@@ -400,12 +410,13 @@ nav a:hover {
 /* --- BLOG SECTION --- */
 
 .blogHeader {
-    height: 100vh;
+    height: 90vh;
     background-image: url(../assets/blog-1.jpeg);
-    background-size: auto;
+    background-size: cover;
     background-position: center;
     background-color: whitesmoke;
     position: relative;
+    margin: 0 auto;
 }
 
 .blogContainer {
@@ -648,7 +659,30 @@ nav a:hover {
     text-align: center;
 }
 
+.visuallyhidden:not(:focus):not(:active) {
+          position: absolute;
+          width: 1px;
+          height: 1px;
+          margin: -1px;
+          border: 0;
+          padding: 0;
+          white-space: nowrap;
+          clip-path: inset(100%);
+          clip: rect(0 0 0 0);
+          overflow: hidden;
+    }
+
 /* --- CONTACT PAGE --- */
+
+.contactHeader {
+    height: 90vh;
+    background-image: url(../assets/contact-1.jpeg);
+    background-size: cover;
+    background-position: center;
+    background-color: whitesmoke;
+    position: relative;
+    margin: 0 auto;
+}
 
 .contactPageForm {
     width: 40%;
@@ -661,14 +695,13 @@ nav a:hover {
     float: left;
 }
 
-.contactPageForm h2 {
-    font-family: Raleway;
+.contactPageForm h3 {
     color:  #333333;
     font-size: 25px;
-    font-weight: 700;
     line-height: 80px;
     text-align: left;
     margin-top: 50px;
+    text-transform: uppercase;
 }
 
 .contactPageForm form {
@@ -723,51 +756,42 @@ nav a:hover {
     font-weight: 700;
     line-height: 80px;
     text-align: left;
+    text-transform: uppercase;
 }
+
+/* --- CONTACT DETAILS --- */
 
 .contactAside {
     background-color: rgb(246, 246, 246);
     width: 30%;
+    height: 600px;
     padding: 20px;
-    /* clear: both; */
     float: left;
     margin-left: 100px;
 }
 
-.contactAside h2 {
-    font-family: Raleway;
-    color:  #333333;
+.contactAside h3 {
     font-size: 25px;
-    font-weight: 700;
-    /* line-height: 80px; */
     text-align: left;
+    text-transform: uppercase;
 }
 
-.contactAside h3 {
-    font-family: Raleway;
-    color:  #333333;
+.contactAside h4 {
     font-size: 18px;
     font-weight: 700;
     text-align: left;
-}
-
-/* ???this is being targeted somewhere else??? */
-
-.contactAside h4 {
-    font-family: Lora;
-    color:  #999999;
-    font-size: 13px;
-    font-weight: 400;
-    text-align: left;
-    text-transform: lowercase;
+    text-transform: uppercase;
 }
 
 .contactAside p {
-    font-family: Lora;
+    font-size: 13px;
+    text-align: left;
     color:  #666666;
     font-size: 14px;
-    font-weight: 400;
-    text-align: left;
+}
+
+.workingHours p, .workingHours b {
+    line-height: 10px;
 }
 
 .contactDetails {
@@ -777,29 +801,22 @@ nav a:hover {
 /* --- FOOTER --- */
 
 footer h1 {
-    font-family: 'Raleway', sans-serif;
     color: #64a604;
     font-size: 37.5px;
-    font-weight: 700;
-    line-height: 24px;
     text-align: left;
     text-transform: uppercase;
 }
 
 footer p {
-    font-family: Lora;
     color:  #999999;
     font-size: 13px;
-    font-weight: 400;
     line-height: 26px;
     text-align: left;
 }
 
 footer h2 {
-    font-family: Raleway;
     color:  #ffffff;
     font-size: 18px;
-    font-weight: 700;
     line-height: 24px;
     text-align: left;
 }
@@ -821,24 +838,17 @@ footer h2 {
     list-style: none;
 }
 
+.mainFooter h2 {
+    text-transform: uppercase;
+}
+
 .mainFooterInfo, .mainFooterPosts, .mainFooterSubscribe {
     float: left;
     padding: 0px 45px;
-    /* margin: 0 auto; */
-    /* margin: 0 auto; */
-    /* display: inline-block; */
-    /* margin-right: -4px; */
-    /* display: inline-block; */
 } 
 
 .mainFooterInfo {
-    /* padding-left: 50px; */
     margin-left: 100px;
-}
-
-.mainFooterSubscribe {
-    /* padding-right: 50px; */
-    /* margin-right: 100px; */
 }
 
 .mainFooterPosts a {
@@ -855,11 +865,35 @@ footer h2 {
     color: white;
 }
 
+.formEmail input {
+    height: 30px;
+    width: 85%;;
+    background-color: rgb(102, 102, 102);
+    border: none;
+    padding: 0px 5px;
+    font-family: Lora;
+    color:  #999999;
+    font-size: 13px;
+    font-style: italic;
+    font-weight: 400;
+    line-height: 26px;
+    text-align: left;
+}
+
+
+.formEmail button {
+    background-color: rgb(100, 166, 4);
+    border: none;
+    height: 30px;
+    color: white;
+    margin-left: -5px;
+}
+
 /* ???CAN WE GET THE BORDER PIXEL THINNER THAN 1PX??? */
 
 .footerBorder {
     width: 250px;
-    border-bottom: 1px solid #999999;
+    border-bottom: 1px solid rgba(153, 153, 153, 0.5);
 }
 
 .socialIcons .footerBorder {
@@ -868,10 +902,8 @@ footer h2 {
 
 .socialIcons a {
     text-decoration: none;
-    font-family: Lora;
     color: white;
     font-size: 13px;
-    font-weight: 400;
     line-height: 44px;
     text-align: left;
     padding: 5px;

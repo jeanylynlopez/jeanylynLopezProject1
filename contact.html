@@ -11,18 +11,18 @@
             crossorigin="anonymous">
     <link rel="stylesheet" href="styles/styles.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-</head>
+</head> 
 <body>
     <div class="wrapper">
 
 
-        <header class="blogHeader">
+        <header class="contactHeader">
             <div class="container clearfix">
                 <h1>Delicious</h1>
                 <nav class="navigation">
                     <ul>
                         <li>
-                            <a href="#home">home</a>
+                            <a href="index.html">home</a>
                         </li>
                         <li>
                             <a href="">about</a>
@@ -34,13 +34,13 @@
                             <a href="">nurtition</a>
                         </li>
                         <li>
-                            <a href="#blog">blog</a>
+                            <a href="blog.html">blog</a>
                         </li>
                         <li>
                             <a href="">shop</a>
                         </li>
                         <li>
-                            <a href="#contact">contact</a>
+                            <a href="contact.html">contact</a>
                         </li>
                         <li>
                             <a href="#">
@@ -60,13 +60,20 @@
 <!-- CONTACT FORM -->
 
         <main class="contactPageForm clearfix">
-            <h2>drop us a line</h2>
+            <h3>drop us a line</h3>
             <form action="">
-                <input type="text" placeholder="Your Name" class="contactPageFormName">
-                <input type="text" placeholder="Your Email" class="contactPageFormEmail">
-                <input type="text" placeholder="Subject" class="contactPageFormSubject">
-                <textarea name="specialInstructions" cols="30" rows="10" placeholder="Message" class="contactPageFormCommentInput"></textarea>
-                <button class="contactSubmitMessage">submit message</button>
+                <label for="contactFormName" class="visuallyhidden"></label>
+                <input type="text" placeholder="Your Name" class="contactPageFormName" id="contactFormName">
+
+                <label for="contactFormEmail" class="visuallyhidden"></label>
+                <input type="email" placeholder="Your Email" class="contactPageFormEmail" id="contactFormEmail">
+
+                <label for="subject" class="visuallyhidden"></label>
+                <input type="text" placeholder="Subject" class="contactPageFormSubject" id="subject">
+
+                <label for="contactPageFormCommentInput" class="visuallyhidden"></label>
+                <textarea name="specialInstructions" cols="30" rows="10" placeholder="Message" class="contactPageFormCommentInput" id="contactPageFormCommentInput"></textarea>
+                <button class="contactSubmitMessage">send message  <i class="fas fa-arrow-right"></i></button>
             </form>
         </main>
 
@@ -74,19 +81,19 @@
 
         <aside class="contactAside clearfix">
             <section class="contactDetails">
-                <h2>contact details</h2>
+                <h3>contact details</h3>
                 <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odio, quae!</p>
             </section>
             <section class="workingHours">
-                <h3>working hours</h3>
-                <p>MON - FRI: 08:00am - 5:30 pm</p>
-                <h4>Not working on Saturday and Sunday</h4>
+                <h4>working hours</h4>
+                <p><b>MON - FRI:</b> 08:00am - 5:30 pm</p>
+                <p>Not working on Saturday and Sunday</p>
             </section>
             <section class="contactInfo">
-                <h3>contact info</h3>
-                <h4>A delicious restaurant <br> Toronto, Ontario</h4>
-                <h4>yum@food.com</h4>
-                <h4>+1 234 567 8910</h4>
+                <h4>contact info</h4>
+                <p>A delicious restaurant <br> Toronto, Ontario</p>
+                <p>yum@food.com</p>
+                <p>+1 234 567 8910</p>
             </section>
         </aside>
 
@@ -153,7 +160,8 @@
                 <p>Get all of our newest recipes immediately
                     <br> in your inbox!</p>
                 <div class="formEmail">
-                    <input type="text">
+                    <label for="footerEmail"></label>
+                    <input type="text" placeholder="Enter your email" class="footerEmail "id="footerEmail">
                     <button>
                         <i class="fas fa-arrow-right"></i>
                     </button>
