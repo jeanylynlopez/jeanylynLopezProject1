@@ -42,17 +42,6 @@ article,aside,details,figcaption,figure,footer,header,hgroup,nav,section,summary
 
 /* ---FONTS--- */
 
-/* h1, h2, h3, h4, h5, h6 {
-	font-family: Verdana, sans-serif; }
-h1 {
-	font-size: 200%; }
-h2 {
-	font-size: 175%;
-	color: #333; }
-h3 {
-	font-size: 150%;
-    color: #f00; } */
-
 html {
     font-size: 62.5%;
 }
@@ -65,22 +54,21 @@ h1, h2, h3, h4, h5, h6 {
 h1 {
     font-family: 'Raleway', sans-serif;
     font-size: 4.5rem;
-    color:  #000000;
+    color: rgb(0, 0, 0);
     text-transform: uppercase;
 }
 
 h2 {
     font-family: 'Raleway', sans-serif;
     font-size: 2.5rem;
-    color:  #000000;
+    color: rgb(0, 0, 0);
     text-transform: uppercase;
-
 }
 
 h3 {
     font-family: 'Raleway', sans-serif;
     font-size: 1.6rem;
-    color: #333333;
+    color: rgb(51, 51, 51);
     text-transform: uppercase;
 
 }
@@ -88,25 +76,25 @@ h3 {
 h4 {
     font-family: 'Raleway', sans-serif;
     font-size: 1.2rem;
-    color: #333333;
+    color: rgb(51, 51, 51);
     text-transform: uppercase;
 }
 
 h5 {
     font-family: 'Raleway', sans-serif;
-    color:  #333333;
+    color: rgb(51, 51, 51);
     text-transform: uppercase;
 }
 
 h6 {
     font-family: 'Raleway', sans-serif;
     font-size: 1rem;
-    color: #333333;
+    color: rgb(51, 51, 51);
 }
 
 p {
     font-family: Lora;
-    color:  #666666;
+    color: rgb(102, 102, 102);
     font-size: 1.3rem;
     font-weight: 400;
     line-height: 24px;
@@ -114,7 +102,7 @@ p {
 
 b {
     font-family: Raleway;
-    color:  #333333;
+    color: rgb(51, 51, 51);
     font-size: 1.4rem;
     font-weight: 700;
     font-weight: bold;
@@ -123,18 +111,13 @@ b {
 
 a {
     font-family: Lora;
-    color:  #666666;
+    color: rgb(102, 102, 102);
     font-size: 1.4rem;
     font-weight: 400;
     line-height: 24px;
 }
 
-li {
-    list-style: none;
-}
-
 /* --- HEADER--- */
-
 
 header h1 {
     float: left;
@@ -164,9 +147,13 @@ nav li {
     float: left;
 }
 
+li {
+    list-style: none;
+}
+
 nav a {
     font-family: 'Raleway', sans-serif;
-    color: black;
+    color :rgb(0, 0, 0);
     text-transform: uppercase;
     font-size: 12px;
     font-size: 16.67px;
@@ -193,7 +180,7 @@ nav a:hover {
     line-height: 7px;
     padding: 5px;
     background: rgb(100, 166, 4);
-    color: white;
+    color: rgb(255,255,255);
     text-align: center;
     font-family: Lora;
     font-size: 12px;
@@ -207,7 +194,6 @@ nav a:hover {
 
 .popularRecipesContent h2 {
     text-align: center;
-    /* text-transform: uppercase; */
 }
 
 .popularRecipesContent, .foodOptionsContent  {
@@ -235,7 +221,7 @@ nav a:hover {
 }
 
 .popularRecipes button h3 {
-    color: white;
+    color: rgb(255,255,255);
 }
 
 .popularRecipes button {
@@ -271,14 +257,14 @@ nav a:hover {
 }
 
 .food p {
-    color:  #999999;
+    color: rgb(153, 153, 153);
     text-align: left;
     clear: both;
 }
 
 .foodOptionsContent li::before {
     font-family: 'Font Awesome\ 5 Free';
-    color: #333333;
+    color: rgb(102, 102, 102);
     font-size: 18px;
     font-weight: 900;
     position: absolute;
@@ -324,7 +310,7 @@ nav a:hover {
 }
 
 .ourRestaurantsContent p {
-    color:  #999999;
+    color: rgb(153, 153, 153);
     text-align: center;
 }
 
@@ -372,7 +358,7 @@ nav a:hover {
 }
 
 .hungryClients p {
-    color: #000000;
+    color: rgb(0, 0, 0);
     font-style: italic;
     text-align: center;
 }
@@ -457,13 +443,10 @@ nav a:hover {
 
 .headByline h2 {
     margin-top: -20px;
-    /* font-size: 36px; */
     text-align: left;
-    /* text-transform: uppercase; */
 }
 
 .headByline h6 {
-    /* font-size: 13px; */
     margin-top: -20px;
     text-align: left;
 }
@@ -475,11 +458,7 @@ nav a:hover {
 /* --- TAGS AND SOCIAL ICONS --- */
 
 .blogtagsSocial a {
-    /* font-family: Lora; */
-    color:  #999999;
-    /* font-size: 14px; */
-    /* font-weight: 400; */
-    /* line-height: 26px; */
+    color: rgb(153, 153, 153);
     text-align: left;
     text-decoration: none;
 }
@@ -502,14 +481,12 @@ nav a:hover {
 /* --- AUTHOR BIO --- */
 
 .authorInfo h3 {
-    /* font-size: 15px; */
     text-align: left;
     margin-top: 10px;
-    /* text-transform: uppercase; */
 }
 
 .authorInfo p {
-    color: #666666;
+    color: rgb(102, 102, 102);
     text-align: left;
 }
 
@@ -525,7 +502,6 @@ nav a:hover {
     width: 71%;
     padding: 20px;
     max-height: 219px;
-    /* margin-top: 5px; */
     background-color: rgb(246, 246, 246);
     float: left;
 }
@@ -547,13 +523,11 @@ nav a:hover {
 }
 
 .post h4 {
-    /* font-size: 11.5px; */
     text-align: left;
-    /* text-transform: uppercase; */
 }
 
 .post h6 {
-    color:  #999999;
+    color: rgb(153, 153, 153);
     font-size: 9.5px;
     text-align: left;
     margin-top: -20px;
@@ -574,7 +548,6 @@ nav a:hover {
     margin-left: 0px;
 }
 
-
 .post a {
      text-decoration: none;
 }
@@ -590,16 +563,12 @@ nav a:hover {
 }
 
 .eachComment h4 {
-    /* font-size: 15px; */
-    /* line-height: 30px; */
     text-align: left;
     text-transform: none;
-    /* text-transform: uppercase; */
 }
 
 .eachComment h4 {
     font-size: 14px;
-    /* line-height: 30px; */
     text-align: left;
     margin-top: 5px;
 }
@@ -608,13 +577,10 @@ nav a:hover {
     font-size: 1.1rem;
     text-align: left;
     margin-top: -10px;
-    /* text-transform: none; */
 }
 
 .eachComment p {
-    color: #333333;
-    /* font-size: 13px; */
-    /* line-height: 21.667px; */
+    color: rgb(51, 51, 51);
     text-align: left;
     margin-top: -15px;
 }
@@ -651,14 +617,14 @@ nav a:hover {
 }
 
 .commentForm p {
-    color:  #999999;
+    color: rgb(153, 153, 153);
     font-style: italic;
     text-align: left;
 }
 
 .nameInput, .emailInput, .siteInput, .commentInput {
     font-family: Lora;
-    color:  #999999;
+    color: rgb(153, 153, 153);
     font-size: 14px;
     font-weight: 400;
     line-height: 26px;
@@ -691,7 +657,7 @@ nav a:hover {
     margin-bottom: 100px;
     border: none;
     font-family: Raleway;
-    color:  #ffffff;
+    color: rgb(255, 255, 255);
     font-size: 14px;
     font-weight: 700;
     line-height: 26px;
@@ -701,16 +667,16 @@ nav a:hover {
 }
 
 .visuallyhidden:not(:focus):not(:active) {
-          position: absolute;
-          width: 1px;
-          height: 1px;
-          margin: -1px;
-          border: 0;
-          padding: 0;
-          white-space: nowrap;
-          clip-path: inset(100%);
-          clip: rect(0 0 0 0);
-          overflow: hidden;
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
     }
 
 /* --- CONTACT PAGE --- */
@@ -728,8 +694,9 @@ nav a:hover {
 .contactPageForm {
     width: 40%;
     margin-left: 150px;
+    margin-top: -30px;
     font-family: Lora;
-    color:  #999999;
+    color: rgb(153, 153, 153);
     font-size: 14px;
     font-weight: 400;
     text-align: left;
@@ -737,17 +704,13 @@ nav a:hover {
 }
 
 .contactPageForm h2 {
-    color:  #333333;
+    color: rgb(51, 51, 51);
     text-align: left;
-    margin-top: 100px;
+    margin-top: 90px;
 }
 
-.contactPageForm form {
-    margin-top: -10px;
-} 
-
 .contactPageForm form input {
-    margin-bottom: 20px;
+    margin-bottom: 30px;
 }
 
 .contactPageForm textarea {
@@ -776,17 +739,13 @@ nav a:hover {
     margin-right: 10px;
 }
 
-.contactPageFormSubject {
-    margin-top: -200px;
-}
-
 .contactPageFormCommentInput {
     padding: 5px 15px;
 } 
 
 .contactSubmitMessage {
     border: none;
-    background-color: white;
+    background-color: rgb(255, 255, 255);
     text-transform: uppercase;
     font-family: Raleway;
     color:  #64a604;
@@ -823,7 +782,7 @@ nav a:hover {
 .contactAside p {
     font-size: 13px;
     text-align: left;
-    color:  #666666;
+    color: rgb(102, 102, 102);
     font-size: 14px;
 }
 
@@ -838,25 +797,25 @@ nav a:hover {
 /* --- FOOTER --- */
 
 footer h2 {
-    color: #64a604;
+    color: rgb(100, 166, 4);
     text-align: left;
     text-transform: uppercase;
 }
 
 footer p {
-    color:  #999999;
+    color: rgb(153, 153, 153);
     text-align: left;
 }
 
 footer h3 {
-    color: #ffffff;
+    color: rgb(255, 255, 255);
     text-align: left;
 }
 
 /* --- MAIN FOOTER --- */
 
 .mainFooter {
-    background-color: #2e2e2e;
+    background-color: rgb(46, 46, 46);
     padding: 20px 0px;
     clear: both;
 }
@@ -886,13 +845,13 @@ footer h3 {
 
 .mainFooterPosts a {
     text-decoration: none;
-    color:  #999999;
+    color: rgb(153, 153, 153);
     line-height: 44px;
     text-align: left;
 }
 
 .mainFooterPosts a:hover {
-    color: white;
+    color: rgb(255, 255, 255);
 }
 
 .formEmail input {
@@ -902,7 +861,7 @@ footer h3 {
     border: none;
     padding: 0px 5px;
     font-family: Lora;
-    color:  #999999;
+    color: rgb(153, 153, 153);
     font-size: 13px;
     font-style: italic;
     font-weight: 400;
@@ -914,7 +873,7 @@ footer h3 {
     border: none;
     height: 35px;
     width: 40px;
-    color: white;
+    color: rgb(255, 255, 255);
     font-size: 14px;
     margin-left: -5px;
 }
@@ -930,21 +889,21 @@ footer h3 {
 
 .socialIcons a {
     text-decoration: none;
-    color: white;
+    color: rgb(255, 255, 255);
     font-size: 13px;
     text-align: left;
     padding: 5px;
 }
 
 .socialIcons a:hover {
-    color: #999999;
+    color: rgb(153, 153, 153);
 }
 
 /* --- SECOND FOOTER --- */
 
 .secondFooter {
     clear: both;
-    background-color: #252525;
+    background-color: rgb(37, 37, 37);
     padding: 1px;
 }
 
