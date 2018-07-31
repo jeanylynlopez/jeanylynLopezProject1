@@ -159,7 +159,7 @@ header h1 {
 /* --- NAVIGATION --- */
 
 .navigation {
-    margin-top: 10px;
+    margin-top: 20px;
     margin-right: 10px;
     float: right;
 }
@@ -639,7 +639,7 @@ nav a:hover {
 .commentInfo i {
     position: relative;
     color: rgb(239, 239, 239);
-    font-size: 12px;
+    font-size: 20px;
     top: 5px;
     left: -26px;
     padding-left: 0px;
@@ -648,7 +648,6 @@ nav a:hover {
 /* ---COMMENT FORM --- */
 
 .commentForm h3 {
-    /* font-size: 15px; */
     text-align: left;
     text-transform: uppercase;
     margin-top: 30px;
@@ -656,9 +655,7 @@ nav a:hover {
 
 .commentForm p {
     color:  #999999;
-    /* font-size: 13px; */
     font-style: italic;
-    /* line-height: 26px; */
     text-align: left;
 }
 
@@ -744,11 +741,8 @@ nav a:hover {
 
 .contactPageForm h2 {
     color:  #333333;
-    /* font-size: 25px; */
-    /* line-height: 80px; */
     text-align: left;
     margin-top: 100px;
-    /* text-transform: uppercase; */
 }
 
 .contactPageForm form {
@@ -822,16 +816,11 @@ nav a:hover {
 }
 
 .contactAside h2 {
-    /* font-size: 25px; */
     text-align: left;
-    /* text-transform: uppercase; */
 }
 
 .contactAside h3 {
-    /* font-size: 18px; */
-    /* font-weight: 700; */
     text-align: left;
-    /* text-transform: uppercase; */
 }
 
 .contactAside p {
@@ -853,22 +842,17 @@ nav a:hover {
 
 footer h2 {
     color: #64a604;
-    /* font-size: 40px; */
     text-align: left;
     text-transform: uppercase;
 }
 
 footer p {
     color:  #999999;
-    /* font-size: 13px; */
-    /* line-height: 26px; */
     text-align: left;
 }
 
 footer h3 {
     color: #ffffff;
-    /* font-size: 18px; */
-    /* line-height: 24px; */
     text-align: left;
 }
 
@@ -877,8 +861,12 @@ footer h3 {
 .mainFooter {
     background-color: #2e2e2e;
     padding: 20px 0px;
-    margin: 0 auto;
     clear: both;
+}
+
+.mainFooter div.container {
+    width: 85%;
+    margin: 0 auto;
 }
 
 .mainFooter ul {
@@ -896,16 +884,12 @@ footer h3 {
 .footerSection {
     float: left;
     margin: 0px 30px;
-    padding: 10px 50px;
     width: calc((100% / 3) - (30px * 2));
 }
 
 .mainFooterPosts a {
     text-decoration: none;
-    /* font-family: Lora; */
     color:  #999999;
-    /* font-size: 13px; */
-    /* font-weight: 400; */
     line-height: 44px;
     text-align: left;
 }
@@ -915,8 +899,8 @@ footer h3 {
 }
 
 .formEmail input {
-    height: 30px;
-    width: 85%;;
+    height: 35px;
+    width: 100px%;
     background-color: rgb(102, 102, 102);
     border: none;
     padding: 0px 5px;
@@ -925,15 +909,16 @@ footer h3 {
     font-size: 13px;
     font-style: italic;
     font-weight: 400;
-    line-height: 26px;
     text-align: left;
 }
 
 .formEmail button {
     background-color: rgb(100, 166, 4);
     border: none;
-    height: 30px;
+    height: 35px;
+    width: 40px;
     color: white;
+    font-size: 14px;
     margin-left: -5px;
 }
 
@@ -950,7 +935,6 @@ footer h3 {
     text-decoration: none;
     color: white;
     font-size: 13px;
-    /* line-height: 44px; */
     text-align: left;
     padding: 5px;
 }
@@ -968,7 +952,7 @@ footer h3 {
 }
 
 .secondFooterInfo {
-    margin-left: 145px;
+    margin-left: 120px;
 }
 
 .secondFooter a {
