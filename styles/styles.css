@@ -166,6 +166,7 @@ nav a {
 
 nav a:hover {
     color:rgb(100, 166, 4);
+    transition: all .3s; 
 }
 
 .shop {
@@ -231,7 +232,8 @@ nav a:hover {
 }
 
 .popularRecipes button:hover {
-    background-color: rgba(100, 166, 4, 0.7);
+    background-color: rgba(100, 166, 4, 0.8);
+    transition: all .3s; 
 }
 
 /* --- FOOD OPTIONS SECTION --- */
@@ -413,7 +415,8 @@ nav a:hover {
 }
 
 .hungryClientsButtons i:hover {
-    color: rgba(255,255,255, 0.6)
+    color: rgba(255,255,255, 0.6);
+    transition: all .3s; 
 }
 
 /* --- BLOG SECTION --- */
@@ -472,6 +475,11 @@ nav a:hover {
     padding: 10px;
 }
 
+.blogtagsSocial a:hover, .blogtagsSocial i:hover {
+    color: rgba(153, 153, 153, 0.4);
+    transition: all .3s; 
+}
+
 .blogBorder {
     border: 1px solid rgba(153, 153, 153, 0.4);
     width: 100%;
@@ -524,6 +532,11 @@ nav a:hover {
 
 .post h4 {
     text-align: left;
+}
+
+.post h4:hover {
+    text-decoration: underline;
+    transition: all .3s; 
 }
 
 .post h6 {
@@ -583,6 +596,11 @@ nav a:hover {
     color: rgb(51, 51, 51);
     text-align: left;
     margin-top: -15px;
+}
+
+.eachComment b {
+    font-weight: bold;
+    font-size: 1.5rem;
 }
 
 .commentPicture {
@@ -664,6 +682,11 @@ nav a:hover {
     text-align: left;
     text-transform: uppercase;
     text-align: center;
+}
+
+.blogSubmitButton:hover {
+    background-color: rgba(100, 166, 4, 0.8);
+    transition: all .3s; 
 }
 
 .visuallyhidden:not(:focus):not(:active) {
@@ -754,6 +777,11 @@ nav a:hover {
     line-height: 80px;
     text-align: left;
     text-transform: uppercase;
+}
+
+.contactSubmitMessage:hover {
+    color: rgb(37, 37, 37);
+    transition: all .3s; 
 }
 
 /* --- CONTACT DETAILS --- */
@@ -850,8 +878,14 @@ footer h3 {
     text-align: left;
 }
 
+.mainFooterPosts a:hover: {
+    color: rgb(255, 255, 255);
+    transition: all .5s; 
+}
+
 .mainFooterPosts a:hover {
     color: rgb(255, 255, 255);
+     transition: all .5s; 
 }
 
 .formEmail input {
