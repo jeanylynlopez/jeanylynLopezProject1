@@ -42,45 +42,76 @@ article,aside,details,figcaption,figure,footer,header,hgroup,nav,section,summary
 
 /* ---FONTS--- */
 
+/* h1, h2, h3, h4, h5, h6 {
+	font-family: Verdana, sans-serif; }
+h1 {
+	font-size: 200%; }
+h2 {
+	font-size: 175%;
+	color: #333; }
+h3 {
+	font-size: 150%;
+    color: #f00; } */
+
+html {
+    font-size: 62.5%;
+}
+
+
+h1, h2, h3, h4, h5, h6 {
+        font-family: 'Raleway', sans-serif;
+        font-weight: 700;
+        line-height: 24px;    }
+
 h1 {
     font-family: 'Raleway', sans-serif;
+    font-size: 4.5rem;
     color:  #000000;
-    line-height: 24px;
-    font-weight: 700;
+    text-transform: uppercase;
+
 }
+
+
 
 h2 {
     font-family: 'Raleway', sans-serif;
+    font-size: 2.5rem;
     color:  #000000;
-    line-height: 24px;
-    font-weight: 700;
+    text-transform: uppercase;
+
 }
 
 h3 {
     font-family: 'Raleway', sans-serif;
+    font-size: 1.6rem;
     color: #333333;
-    line-height: 26px;
-    font-weight: 700;
+    text-transform: uppercase;
+
 }
 
 h4 {
     font-family: 'Raleway', sans-serif;
+    font-size: 1.2rem;
     color: #333333;
-    line-height: 26px;
-    font-weight: 700;
+    text-transform: uppercase;
 }
 
 h5 {
     font-family: 'Raleway', sans-serif;
     color:  #333333;
-    font-weight: 700;
-    line-height: 30px;
+    text-transform: uppercase;
+}
+
+h6 {
+    font-family: 'Raleway', sans-serif;
+    font-size: 1rem;
+    color: #333333;
 }
 
 p {
     font-family: Lora;
     color:  #666666;
-    font-size: 14px;
+    font-size: 1.3rem;
     font-weight: 400;
     line-height: 24px;
 }
@@ -88,10 +119,18 @@ p {
 b {
     font-family: Raleway;
     color:  #333333;
-    font-size: 14px;
+    font-size: 1.4rem;
     font-weight: 700;
     font-weight: bold;
     line-height: 26px;
+}
+
+a {
+    font-family: Lora;
+    color:  #666666;
+    font-size: 1.4rem;
+    font-weight: 400;
+    line-height: 24px;
 }
 
 li {
@@ -100,18 +139,12 @@ li {
 
 /* --- HEADER--- */
 
-/* ???position relative / absolute on header h1, .mainheder, .navigation. is that necessay??? */
-
-/* ???Can you use float right??? */
 
 header h1 {
     float: left;
-    position: absolute;
-    top: 0px;
-    left: 15px;
-    font-size: 45.83px;
     text-align: left;
     text-transform: uppercase;
+    margin-left: 10px;
 }
 
 .mainHeader {
@@ -120,21 +153,15 @@ header h1 {
     background-size: cover;
     background-position: center;
     background-color: whitesmoke;
-    position: relative;
     padding: 1px;
 }
 
 /* --- NAVIGATION --- */
 
 .navigation {
-    margin-top: 30px;
-    margin-left: 350px;
-}
-
-nav {
-    position: absolute; 
-    right: 15px;
-    top: -15px;
+    margin-top: 10px;
+    margin-right: 10px;
+    float: right;
 }
 
 nav li {
@@ -160,22 +187,31 @@ nav a:hover {
 
 .shop {
     position: relative;
+    display: inline;
 }
 
-/* .shop a {
-    position: absolute;
-}
-
-.shop a:after {
+.shop i::after {
     content: "2";
-} */
+    border-radius: 50%;
+    width: 7px;
+    line-height: 7px;
+    padding: 5px;
+    background: rgb(100, 166, 4);
+    color: white;
+    text-align: center;
+    font-family: Lora;
+    font-size: 12px;
+    position: absolute;
+    display: block;
+    bottom: -8px;
+    left: 10px;
+}
 
 /* ---POPULAR RECIPES SECTION--- */
 
-.popularRecipesContent h1 {
-    font-size: 30px;
+.popularRecipesContent h2 {
     text-align: center;
-    text-transform: uppercase;
+    /* text-transform: uppercase; */
 }
 
 .popularRecipesContent, .foodOptionsContent  {
@@ -232,18 +268,13 @@ nav a:hover {
     margin-top: -20px;
 }
 
-.food h1 {
-    font-size: 18px;
+.food h3 {
     line-height: 36px;
     text-align: left;
-    text-transform: uppercase;
 }
 
 .food p {
     color:  #999999;
-    font-size: 13px;
-    line-height: 24px;
-    text-align: left;
     text-align: left;
     clear: both;
 }
@@ -291,14 +322,11 @@ nav a:hover {
     position: relative;
 }
 
-.ourRestaurantsContent h1 {
-    font-size: 30px;
+.ourRestaurantsContent h2 {
     text-align: center;
-    text-transform: uppercase;
 }
 
 .ourRestaurantsContent p {
-    font-family: Lora;
     color:  #999999;
     text-align: center;
 }
@@ -342,10 +370,8 @@ nav a:hover {
     clear: both;
 }
 
-.hungryClients h1 { 
-    font-size: 30px;
+.hungryClients h2 { 
     text-align: center;
-    text-transform: uppercase;
 }
 
 .hungryClients p {
@@ -432,15 +458,15 @@ nav a:hover {
     margin-top: 100px;
 }
 
-.headByline h1 {
+.headByline h2 {
     margin-top: -20px;
-    font-size: 36px;
+    /* font-size: 36px; */
     text-align: left;
-    text-transform: uppercase;
+    /* text-transform: uppercase; */
 }
 
-.headByline h2 {
-    font-size: 13px;
+.headByline h6 {
+    /* font-size: 13px; */
     margin-top: -20px;
     text-align: left;
 }
@@ -452,11 +478,11 @@ nav a:hover {
 /* --- TAGS AND SOCIAL ICONS --- */
 
 .blogtagsSocial a {
-    font-family: Lora;
+    /* font-family: Lora; */
     color:  #999999;
-    font-size: 14px;
-    font-weight: 400;
-    line-height: 26px;
+    /* font-size: 14px; */
+    /* font-weight: 400; */
+    /* line-height: 26px; */
     text-align: left;
     text-decoration: none;
 }
@@ -479,9 +505,10 @@ nav a:hover {
 /* --- AUTHOR BIO --- */
 
 .authorInfo h3 {
-    font-size: 15px;
+    /* font-size: 15px; */
     text-align: left;
-    text-transform: uppercase;
+    margin-top: 10px;
+    /* text-transform: uppercase; */
 }
 
 .authorInfo p {
@@ -501,6 +528,7 @@ nav a:hover {
     width: 71%;
     padding: 20px;
     max-height: 219px;
+    /* margin-top: 5px; */
     background-color: rgb(246, 246, 246);
     float: left;
 }
@@ -522,14 +550,14 @@ nav a:hover {
 }
 
 .post h4 {
-    font-size: 11.5px;
+    /* font-size: 11.5px; */
     text-align: left;
-    text-transform: uppercase;
+    /* text-transform: uppercase; */
 }
 
-.post p {
+.post h6 {
     color:  #999999;
-    font-size: 8px;
+    font-size: 9.5px;
     text-align: left;
     margin-top: -20px;
 }
@@ -538,11 +566,17 @@ nav a:hover {
     width: 100%;
 }
 
-.post {
-    width: 33%;
-    float: left;
-    padding: 0px 5px;
+.relatedPosts {
+    width: 100%;
 }
+
+.post {
+    width: 32%;
+    float: left;
+    margin: 0px 8px;
+    margin-left: 0px;
+}
+
 
 .post a {
      text-decoration: none;
@@ -558,32 +592,34 @@ nav a:hover {
     padding-left: 0;
 }
 
-.eachComment h3 {
-    font-size: 15px;
-    line-height: 30px;
+.eachComment h4 {
+    /* font-size: 15px; */
+    /* line-height: 30px; */
     text-align: left;
-    text-transform: uppercase;
+    text-transform: none;
+    /* text-transform: uppercase; */
 }
 
 .eachComment h4 {
     font-size: 14px;
-    line-height: 30px;
+    /* line-height: 30px; */
     text-align: left;
-    margin-top: 15px;
+    margin-top: 5px;
 }
 
-.eachComment h5 {
-    font-size: 11px;
+.eachComment h6 {
+    font-size: 1.1rem;
     text-align: left;
-    margin-top: -15px;
+    margin-top: -10px;
+    /* text-transform: none; */
 }
 
 .eachComment p {
     color: #333333;
-    font-size: 13px;
-    line-height: 21.667px;
+    /* font-size: 13px; */
+    /* line-height: 21.667px; */
     text-align: left;
-    margin-top: -20px;
+    margin-top: -15px;
 }
 
 .commentPicture {
@@ -603,24 +639,26 @@ nav a:hover {
 .commentInfo i {
     position: relative;
     color: rgb(239, 239, 239);
+    font-size: 12px;
     top: 5px;
     left: -26px;
-    font-size: 30px;
+    padding-left: 0px;
 }
 
 /* ---COMMENT FORM --- */
 
 .commentForm h3 {
-    font-size: 15px;
+    /* font-size: 15px; */
     text-align: left;
     text-transform: uppercase;
+    margin-top: 30px;
 }
 
 .commentForm p {
     color:  #999999;
-    font-size: 13px;
+    /* font-size: 13px; */
     font-style: italic;
-    line-height: 26px;
+    /* line-height: 26px; */
     text-align: left;
 }
 
@@ -704,13 +742,13 @@ nav a:hover {
     float: left;
 }
 
-.contactPageForm h3 {
+.contactPageForm h2 {
     color:  #333333;
-    font-size: 25px;
-    line-height: 80px;
+    /* font-size: 25px; */
+    /* line-height: 80px; */
     text-align: left;
-    margin-top: 50px;
-    text-transform: uppercase;
+    margin-top: 100px;
+    /* text-transform: uppercase; */
 }
 
 .contactPageForm form {
@@ -772,24 +810,28 @@ nav a:hover {
 
 .contactAside {
     background-color: rgb(246, 246, 246);
-    width: 30%;
+    width: 40%;
     height: 600px;
     padding: 20px;
     float: left;
     margin-left: 100px;
 }
 
-.contactAside h3 {
-    font-size: 25px;
-    text-align: left;
-    text-transform: uppercase;
+.contactAside section {
+    margin-top: 40px;
 }
 
-.contactAside h4 {
-    font-size: 18px;
-    font-weight: 700;
+.contactAside h2 {
+    /* font-size: 25px; */
     text-align: left;
-    text-transform: uppercase;
+    /* text-transform: uppercase; */
+}
+
+.contactAside h3 {
+    /* font-size: 18px; */
+    /* font-weight: 700; */
+    text-align: left;
+    /* text-transform: uppercase; */
 }
 
 .contactAside p {
@@ -809,24 +851,24 @@ nav a:hover {
 
 /* --- FOOTER --- */
 
-footer h1 {
+footer h2 {
     color: #64a604;
-    font-size: 37.5px;
+    /* font-size: 40px; */
     text-align: left;
     text-transform: uppercase;
 }
 
 footer p {
     color:  #999999;
-    font-size: 13px;
-    line-height: 26px;
+    /* font-size: 13px; */
+    /* line-height: 26px; */
     text-align: left;
 }
 
-footer h2 {
-    color:  #ffffff;
-    font-size: 18px;
-    line-height: 24px;
+footer h3 {
+    color: #ffffff;
+    /* font-size: 18px; */
+    /* line-height: 24px; */
     text-align: left;
 }
 
@@ -851,7 +893,6 @@ footer h2 {
     text-transform: uppercase;
 }
 
-
 .footerSection {
     float: left;
     margin: 0px 30px;
@@ -861,10 +902,10 @@ footer h2 {
 
 .mainFooterPosts a {
     text-decoration: none;
-    font-family: Lora;
+    /* font-family: Lora; */
     color:  #999999;
-    font-size: 13px;
-    font-weight: 400;
+    /* font-size: 13px; */
+    /* font-weight: 400; */
     line-height: 44px;
     text-align: left;
 }
@@ -888,7 +929,6 @@ footer h2 {
     text-align: left;
 }
 
-
 .formEmail button {
     background-color: rgb(100, 166, 4);
     border: none;
@@ -896,8 +936,6 @@ footer h2 {
     color: white;
     margin-left: -5px;
 }
-
-/* ???CAN WE GET THE BORDER PIXEL THINNER THAN 1PX??? */
 
 .footerBorder {
     width: 250px;
@@ -912,7 +950,7 @@ footer h2 {
     text-decoration: none;
     color: white;
     font-size: 13px;
-    line-height: 44px;
+    /* line-height: 44px; */
     text-align: left;
     padding: 5px;
 }
@@ -937,6 +975,4 @@ footer h2 {
     text-decoration: none;
     color: rgb(100, 166, 4);
 }
-
-/* ??? WHY ISN'T MARGIN 0 AUTO WORKING??? */
 
