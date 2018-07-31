@@ -7,31 +7,29 @@ article,aside,details,figcaption,figure,footer,header,hgroup,nav,section,summary
 /* Table of contents 
  - Wrapper 
     - Main fonts 
-    - Index
-        - Header & Navigation 
-        - Main section: 
-            - Popular recipes 
-            - Food options 
-            - Our restaurants 
-            - Image grid 
-            - Hungry clients
-        - Footer
+    1.  Index
+        - Header
+        - Navigation 
+        - Popular recipes 
+        - Food options 
+        - Our restaurants 
+        - Image grid 
+        - Hungry clients
 
-    - Blog 
-        - Header & Navigation 
+    2.  Blog 
+        - Blog header 
         - Article 
         - Tags and social icons
         - Author bio
         - Related posts
         - Comments
         - Form
-        - Footer
 
-    - Contact form 
-        - Header & Navigation
+    3. Contact form 
+        - Contact header 
         - Contact form 
         - Contact details
-        - Footer */
+    - Footer */
 
 /* --- WRAPPER FOR ALL PAGES --- */
 
@@ -116,6 +114,8 @@ a {
     font-weight: 400;
     line-height: 24px;
 }
+
+/* --- INDEX --- */
 
 /* --- HEADER--- */
 
@@ -419,7 +419,9 @@ nav a:hover {
     transition: all .3s; 
 }
 
-/* --- BLOG SECTION --- */
+/* --- 2. BLOG SECTION --- */
+
+/* --- BLOG HEADER --- */
 
 .blogHeader {
     height: 90vh;
@@ -702,7 +704,9 @@ nav a:hover {
     overflow: hidden;
     }
 
-/* --- CONTACT PAGE --- */
+/* --- 3. CONTACT PAGE --- */
+
+/* --- CONTACT HEADER --- */
 
 .contactHeader {
     height: 90vh;
@@ -713,6 +717,8 @@ nav a:hover {
     position: relative;
     margin: 0 auto;
 }
+
+/* --- CONTACT FORM --- */
 
 .contactPageForm {
     width: 40%;
@@ -839,8 +845,6 @@ footer h3 {
     color: rgb(255, 255, 255);
     text-align: left;
 }
-
-/* --- MAIN FOOTER --- */
 
 .mainFooter {
     background-color: rgb(46, 46, 46);
