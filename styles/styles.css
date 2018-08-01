@@ -254,7 +254,6 @@ nav a:hover {
 
 .foodOptionsContent li::before {
     font-family: 'Font Awesome\ 5 Free';
-    /* color: rgb(102, 102, 102); */
     color: rgb(0, 0, 0);
     font-size: 18px;
     font-weight: 900;
