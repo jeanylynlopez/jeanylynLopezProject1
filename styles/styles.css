@@ -198,6 +198,7 @@ nav a:hover {
 }
 
 .popularRecipesContent {
+    margin-top: 20px;
     padding: 70px 50px;
     text-align: center;
 }
@@ -253,7 +254,8 @@ nav a:hover {
 
 .foodOptionsContent li::before {
     font-family: 'Font Awesome\ 5 Free';
-    color: rgb(102, 102, 102);
+    /* color: rgb(102, 102, 102); */
+    color: rgb(0, 0, 0);
     font-size: 18px;
     font-weight: 900;
     position: absolute;
@@ -656,7 +658,7 @@ nav a:hover {
 }
 
 .blogSubmitButton {
-    width: 250px;
+    width: 200px;
     height: 50px;
     background-color: rgb(100, 166, 4);
     border: none;
@@ -771,6 +773,10 @@ nav a:hover {
     margin-left: 100px;
 }
 
+.contactContainer {
+    margin-top: 65px;
+}
+
 .contactAside section {
     margin-top: 40px;
 }
@@ -852,7 +858,7 @@ footer h3 {
     text-align: left;
 }
 
-.mainFooterPosts a:hover: {
+.mainFooterPosts a:hover {
     color: rgb(255, 255, 255);
     transition: all .5s; 
 }
@@ -864,7 +870,7 @@ footer h3 {
 
 .formEmail input {
     height: 35px;
-    width: 100px%;
+    width: 70%;
     background-color: rgb(102, 102, 102);
     border: none;
     padding: 0px 5px;
@@ -880,7 +886,7 @@ footer h3 {
     background-color: rgb(100, 166, 4);
     border: none;
     height: 35px;
-    width: 40px;
+    width: 15%;
     color: rgb(255, 255, 255);
     font-size: 14px;
     margin-left: -5px;
